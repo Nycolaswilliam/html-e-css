@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODULO 03!</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <style>
+        @import url('https//fonts.googleapis.com/css2family=bebas+Neue&display=swap');
+
+        @font-face {
+           font-family:"android";
+           src: url(fonte/android.otf) format('opentype')
+       }
+
+        :root{
+            --cor0: rgb(255, 255, 255);
+            --cor1: rgb(194, 192, 157);
+            --cor2: rgb(151, 150, 108);
+            --cor3: rgb(148, 147, 76);
+            --cor4: rgb(131, 133, 34);
+            --cor5: rgb(77, 72, 0);
+            --cor6: rgb(44, 43, 0);
+            --cor7: rgba(238, 202, 119, 0.526);
+            --cor8: rgba(0, 0, 0, 0.526);
+            
+
+            --fonte-padrao: arial, verdana, Helvetica, sans-serif;
+            --fonte-destaque: 'bebas Neue' , cursive;
+            --fonte-android: 'Android', cursive; 
+        }
+
+        h1{
+            color:rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        h2{
+            background-color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        *{
+            margin: 0px;
+            padding: opx;
+        }
+
+        header{
+            min-height: 150px;
+            text-align: center;
+            padding:40px;
+        background-image: linear-gradient(to bottom,var(--cor3), var(--cor6))
+        }
+
+        header > h1{
+            color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 4.5em;
+            text-shadow: 8px 12px black;
+        }
+
+        header > p{
+            color:white;
+            font-size: 2.0em;
+            max-width: 600px;
+            margin: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-shadow: 7px 6px black;
+        }
+
+        nav{
+            background-color: var(--cor6);
+            padding: 10px;
+            box-shadow: 0px 10px 7px black;;
+        }
+
+        main{
+            color: rgb(0, 0, 0);
+            min-width: 300px;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 90px black;
+            border-radius:10px;
+        }
+
+        body{
+            background-color: var(--cor5);
+        }
+
+        main h1{
+            color: var(--cor5);
+            font-family: var(--fonte-android);
+        }
+
+        main h2{
+            font-family: var(--fonte-android);
+            color: var(--cor6);
+            font-size: 1.5em;
+            background-image: linear-gradient(to right, var(--cor1), transparent);
+            text-indent: 8px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        main img.pequena{
+            margin: auto;
+            display: block;
+            max-width: 350px;
+            width: 50%;
+        }
+
+        div.video{
+            background-color: var(--cor5);
+            margin: 0px -20px 30px -20px;
+            padding:20px;
+            padding-bottom: 59%;
+            position: relative;
+        }
+
+        div.video > iframe{
+             position: absolute;
+             top: 5%;
+             left: 5%;
+             width: 90%;
+             height: 90%;
+        }
+
+        footer{
+            background-color: var(--cor5);
+            color: white;
+            text-align: center;
+            font-size: 0.8em;
+            padding: 5px;
+        }
+
+        aside > h3{
+            margin: -10px -10px -10px;
+            border-radius: 10px 10px 0px 0px;
+            background-color: var(--cor4);
+            color: white;
+            padding: 15px;
+            }
+
+            aside{
+            background-color: var(--cor1);
+            padding: 10px;
+            border-radius: 10px;
+            columns: 1;
+            list-style-type: '\2705\00A0\00A0';
+            box-shadow: 3px 3px 10px black;
+        }
+
+        footer a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer a:hover{
+            text-decoration: underline;
+            color: var(--cor1);
+        }
+        
+
+        a:hover{
+        background-color: var(--cor3);
+        color:var(--cor6)
+       }
+
+       a{
+        color: var(--cor0)
+       }
+       a{
+        font-weight: bold;
+       }
+
+       nav > a{
+        padding: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+        transition-duration: 1s;      
+       }
+
+       iframe{
+        margin: auto;
+        display: block;
+       }
+
+       main p{
+        margin: 15px 0px;
+        text-align: justify;
+        text-indent: 30px;
+        font-size: 1.5em;
+        line-height: 1.8em;
+        font-weight: bolder;
+       }
+
+       main strong{
+        color: var(--cor4);
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding: 2px 6px;
+       } 
+    </style>
+    <head>
+<body>
+    <header>
+        <h1><strong>MODULO 03 DO CAPITULO 18 ATE O 21!</strong></h1>
+        <P><strong>INSTALANDO AS COISAS NO SEU NOTEBOOK E SEU PC!</strong></P>
+    </header>
+
+    <nav>
+        <a href="#"><abbr title="INICIO"><strong>HOME</strong></abbr></a>
+        <a href="#"><abbr title="NOVAS NOTICIAS VC VERA AQUI"><strong>NOTICIAS</strong></abbr></a>
+        <a href="#"><abbr title="AQUI VOÇE IRA VER A NOVAS NOVIDADES OU COMPO PODEMOS DIZR CURIOSIDADES"><strong>CURIOSIDADES</strong></abbr></a>
+        <a href="#"><abbr title="POR ESSE NUMERO 81963634284"><strong>FALE CONOSCO</strong></abbr></a>
+    </nav>
+    <main>
+        <article>
+            <h2>BOM VAMOS COMEÇA A NOSSA AULA DO MODULO 03 NOSSO PRIMEIRO REPOSITORIO!</h2>
+
+<p>BOM vamos la pessoal BEN VINDOS A AULA DE hoje ONDE IREMOS criar O NOSSO primeiro REPOSITORIO ok MAIS... antes IREI PERGUNTA se voçe ja ASSISTIU  a ultima AULA ou como eu posso dizer A AULA ANTERIOR se voçe NAO assistiu VOLTE IMEDIATAMENTE ok pessoal entao resumindo bom pra voçe que NAO VIU  a aula anterior NA VERDADE as 4 AULAS ANTERIORES nos vimos na 1 AULA nos vimos ne a INTRODUÇAO onde nos vimos po que vamos APRENDER ao longo do noso CAPITULO ok ja na nossa 2 AULA vimos o que e o "GIT" e o "GITDESCKTOP" vimos tudo sbore ELES e na AULA vimos ou como eu posso fala melhor BAIXAMOS  e INSTLAMOS as FERRAMENTAS que vamos usar ao LONGO DESSE CAPITULO ok e na 4 AULA vimos ou mehor CRIAMOS O NOSSO PREFIL do GITHUB e agora nessa aula IREMOS VER ou fazer o nosso 1 REPOSITORIO que estavamos esteramsdo tanto pessoal mais e hoje vamos la BOM ja ia me esquecendo bom pessoal ja falei uma fez irei fala novamente ok PESSOAL bom nessa AULA eu nao vou escreve muito NAO mais voçe deve esta se pergutando mais PORQUE NAO NYCOLAS bom se voçe sabe nesa aula iremos fazer o nosso 1 REPOSITORIO  e tenho que PRESTA ATENÇAO pra NAO ERRAR ok pessoal entao ja sabem ne como eu faço em TODAS AS AULAS eu irei colocar um video nessa AULA do nosso PROFESSOR EXPLICANDO pra voçe poder tambem PRESTA ATENÇAO em cada minuto que ele eta EXPLICANDO mais bom vamos la lest goo para a AULA!<p>
+
+<p>BOM ia esquecendo de fala tambem quem NAO ASSISTIU as 4 AULAS que ja vimos VOLTE que voçe esta perdendo muita COISA pois ja estamos na 5 AULA desse MODULO bom vamos la bom depois que voçe fazer o seu REPOSITORIO tudo certinho do jeito que o nosso professor esta EXPLICANDO ok e si ja ia me esquecendo tambem de fala bom O NOSSO PROFESSOR ne gustavo guanabara ele tinha falado na AULA anterio que iria fazer o nosso REPOSITORIO hoje certo E PROVAVELMENTE iria tambem fazer todas as CONFIGURAÇOES tambem mais voçe deve esta pensando que CONFIGURAÇOES sao essas? bem o que eu acho que sao essas CONFIGURAÇOES deve ser a "linguagem" algumas cisas pra "ativar" ou ate mesmo pra "desativa" PROVAVELMENTE deve ser essas COISAS mais bom vamos pra AULA que eu estou DEMORANDO demais vamoooo! bom eu estava pensando em colocar aqui tudo que o nosso professor estiver falando mais porque nycolas voçe falou que iria colocar NADA MAIS mais bom eu resolvi colocar porque eu to achando que seria muito POUCA escrita mais bom vou fala um pouco aqui bom vamos la abra o seu notebook ou pc que esta na sua casa e ja abra o GITHUBDESCKTOP que ja vamos começa com as nossas CONFIGURAÇOES okay bom depois que voçe abri e ja ter feito tudo no começa nas aulas ANTERIORES voçe ira clica em "CRIATE NE -W REPOSITORIO" porque vamos primeiro crirar um respositorio LOCAL esse e o primeiro passo BOM depois de voçe ter feito isso voçe ira ne colocar o nome que esta no seo DOCUMENTO onde estara o seu curso okay a descriao voçe pode coloca o que voçe quiser okay e onde tem LOCAL PATH voçe ira colocar onde esta a sua pasta de estudo que e onde fica em DOCUMENTOS/ESTUDOS etc... ok pessoal e onde tem um quadradinho que NAO esta habilitado voçe ira habilitar faça do mesmo jeito que o nosso PROFESSOR esta fazendo </p>
+
+<p>bom como eu ja falei irei colocar um <strong>VIDEO</strong> aqui pra voçe pode <strong>ENTENDER</strong> melhor que o nosso <strong>PROFESSOR</strong> esta <strong>EXPLICANDO E ENSINANDO A FAZER O SEU 1 REPOSITORIO</strong> ok pessoal e isso por hoje e ate jaja ta certo tmj pessoal flw tropaaaa!</p>
+
+<aside>
+ 
+<h3><strong>QUER APRENDER MAIS? E ENTENDER MELHOR O VIDEO VEJA AQUI EM BAIXO!</strong></h3>
+
+<div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/P0Hvrf8T3zo?si=1t-KZo4nvgPDCYeV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p>BOM E ISSO PESSOAL E LAMBRANDO NUNCA DESISTA DOS SEUS SONHOS QUE UM DIS VC IRA REALIZAR!</p>
+
+<url>
+     <li>1.0 - <abbr title="MODULO 01">FEITO</abbr></li>
+
+    <li>2.0 - <abbr title="MODULO 02">FEITO</abbr></li>
+
+    <li>3.0 - <abbr title="MDULO 03">EM ANDAMENTO</abbr></li>
+
+    <li>4.0 - <abbr title="MODULO 04">AINDA NAO FEITO</abbr></li>
+
+    <li>5.0 - <abbr title="MODULO 05">AINDA NAO FEITO</abbr></li>
+</url>
+
+<P>voçe pode acessar meus <strong>REPOSITORIOS</strong> aqui em baixo</P>
+</aside>
+</article>
+</main>
+<footer>
+    <p>site criado por NYCOLAS WILLIAM para o <a href="https://www.youtube.com/@nycoolaswillian" target="_blank">YOUTUBE</a> ou <a href="https://www.instagram.com/nycoolaswillian/" target="_blank">INSTAGRAM</a></p>
+</footer>

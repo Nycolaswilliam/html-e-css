@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title> HTML MODULO 03</title>
+</head>
+<body>
+    <style>
+        @import url('https//fonts.googleapis.com/css2family=bebas+Neue&display=swap');
+
+        @font-face {
+           font-family:"android";
+           src: url(fonte/android.otf) format('opentype')
+       }
+
+        :root{
+            --cor0: rgb(255, 255, 255);
+            --cor1: rgb(157, 158, 194);
+            --cor2: rgb(108, 111, 151);
+            --cor3: rgb(76, 83, 148);
+            --cor4: rgb(34, 41, 133);
+            --cor5: rgb(0, 12, 77);
+            --cor6: rgb(0, 1, 44);
+            --cor7: rgba(238, 202, 119, 0.526);
+            --cor8: rgba(0, 0, 0, 0.526);
+            
+
+            --fonte-padrao: arial, verdana, Helvetica, sans-serif;
+            --fonte-destaque: 'bebas Neue' , cursive;
+            --fonte-android: 'Android', cursive; 
+        }
+
+        h1{
+            color:rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        h2{
+            background-color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        *{
+            margin: 0px;
+            padding: opx;
+        }
+
+        header{
+            min-height: 150px;
+            text-align: center;
+            padding:40px;
+        background-image: linear-gradient(to bottom,var(--cor3), var(--cor6))
+        }
+
+        header > h1{
+            color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 4.5em;
+            text-shadow: 8px 12px black;
+        }
+
+        header > p{
+            color:white;
+            font-size: 2.0em;
+            max-width: 600px;
+            margin: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-shadow: 7px 6px black;
+        }
+
+        nav{
+            background-color: var(--cor6);
+            padding: 10px;
+            box-shadow: 0px 10px 7px black;;
+        }
+
+        main{
+            color: rgb(0, 0, 0);
+            min-width: 300px;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 90px black;
+            border-radius:10px;
+        }
+
+        body{
+            background-color: var(--cor5);
+        }
+
+        main h1{
+            color: var(--cor5);
+            font-family: var(--fonte-android);
+        }
+
+        main h2{
+            font-family: var(--fonte-android);
+            color: var(--cor6);
+            font-size: 1.5em;
+            background-image: linear-gradient(to right, var(--cor1), transparent);
+            text-indent: 8px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        main img.pequena{
+            margin: auto;
+            display: block;
+            max-width: 350px;
+            width: 50%;
+        }
+
+        div.video{
+            background-color: var(--cor5);
+            margin: 0px -20px 30px -20px;
+            padding:20px;
+            padding-bottom: 59%;
+            position: relative;
+        }
+
+        div.video > iframe{
+             position: absolute;
+             top: 5%;
+             left: 5%;
+             width: 90%;
+             height: 90%;
+        }
+
+        footer{
+            background-color: var(--cor5);
+            color: white;
+            text-align: center;
+            font-size: 0.8em;
+            padding: 5px;
+        }
+
+        aside > h3{
+            margin: -10px -10px -10px;
+            border-radius: 10px 10px 0px 0px;
+            background-color: var(--cor4);
+            color: white;
+            padding: 15px;
+            }
+
+            aside{
+            background-color: var(--cor1);
+            padding: 10px;
+            border-radius: 10px;
+            columns: 1;
+            list-style-type: '\2705\00A0\00A0';
+            box-shadow: 3px 3px 10px black;
+        }
+
+        footer a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer a:hover{
+            text-decoration: underline;
+            color: var(--cor1);
+        }
+        
+
+        a:hover{
+        background-color: var(--cor3);
+        color:var(--cor6)
+       }
+
+       a{
+        color: var(--cor0)
+       }
+       a{
+        font-weight: bold;
+       }
+
+       nav > a{
+        padding: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+        transition-duration: 1s;      
+       }
+
+       iframe{
+        margin: auto;
+        display: block;
+       }
+
+       main p{
+        margin: 15px 0px;
+        text-align: justify;
+        text-indent: 30px;
+        font-size: 1.5em;
+        line-height: 1.8em;
+        font-weight: bolder;
+       }
+
+       main strong{
+        color: var(--cor4);
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding: 2px 6px;
+       } 
+    </style>
+    <head>
+<body>
+    <header>
+        <h1><strong>MODULO 03 VAMOS COMEÇA AGORA!</strong></h1>
+        <P><strong>NUNCA DESISTA QUE UM DIA VC IRA CHEGA LA ONDE VC DESEJA IR!</strong></P>
+    </header>
+
+    <nav>
+        <a href="#"><abbr title="INICIO"><strong>HOME</strong></abbr></a>
+        <a href="#"><abbr title="NOVAS NOTICIAS VC VERA AQUI"><strong>NOTICIAS</strong></abbr></a>
+        <a href="#"><abbr title="AQUI VOÇE IRA VER A NOVAS NOVIDADES OU COMPO PODEMOS DIZR CURIOSIDADES"><strong>CURIOSIDADES</strong></abbr></a>
+        <a href="#"><abbr title="POR ESSE NUMERO 81963634284"><strong>FALE CONOSCO</strong></abbr></a>
+    </nav>
+    <main>
+        <article>
+            <h2>BOM VAMOS COMEÇA A NOSSA AULA DO MODULO 03  CAPITULO 18 ATE O CAPITULO 19!</h2>
+
+<p><strong>BOM</strong> vamos la começa mais uma aula de <strong>HTML E CSS</strong> que cada vez esta ficando mais legal e <strong>DIVERTIDO</strong> alem e voçes <strong>APRENDERAM CADA VEZ MAIS</strong> entao vamos la mais <strong>ANTES</strong> se <strong>VOÇE</strong> nao viu a <strong>AULA ANTERIOR</strong> volte a va <strong>ASSISTR</strong> que esta muito boa apesar que na <strong>AULA</strong> anterior so foi <strong>EXPLICANDO</strong> o que <strong>IREMOS</strong> aprender durante esse <strong>CAPITULO</strong> ok mais e bom voçe <strong>ASSISTIR</strong> porque la ele <strong>EXPLICA</strong> os <strong>REQUISITOS</strong> que voçe ira <strong>PRECISAR</strong> alem de voçe <strong>ASSISTIR</strong> voçe ira ver o que voçe vai <strong>PRECISAR</strong> instalar no seu <strong>NOTEBOOK</strong> e no seu <strong>PC</strong> ok pessoal entao e isso ah sim ia acaba esquecendo <strong>NAO DEIXA DE ANOTA</strong> as coisa que o nosso <strong>PROFESSOR</strong> esta <strong>EXPLICANDO</strong> porque <strong>NAO</strong>  e so senta ai e <strong>ASSISTIR</strong> como se fosse <strong>NETIFLIX</strong> e ainda comendo <strong>PIPOCA</strong> ok entao e isso ja <strong>PEGUE</strong> o seu <strong>CADERNO</strong> e ja começe <strong>ANOTA</strong> tudo <strong>EXATAMENTE TUDO</strong> ok <strong>NUNCA DEIXE</strong> de anota ta certo <strong>PESSOAL</strong> mais vamos la vu <strong>DEIXA DE ENRROLAÇAO</strong> e vamos começa a nossa <strong>AULA!</strong><p>
+
+<h2>BOM PRA COMEÇA A NOSSA AULA PRA QUE SERVE O "GITHUB" e o "GIT" OU O QUE E O "GITHUB?" ou o "GIT?"</h2>
+
+<p><strong>BOM</strong> vamos la irei <strong>EXPLICAR</strong> pra <strong>VOÇE</strong> que queira <strong>SABER</strong> o que e <strong>GITHUB E O GIT</strong> ou ate mesmo <strong>PRA QUE SERVE</strong> bom mais antes de <strong>EXPLICAR</strong> pra voça irei fala o o que e o <strong>GITHUB</strong> bom o <strong>GITHUB</strong> e um <strong>APP</strong> kkk mais e <strong>OBIVIO</strong> mais bom ele pode ser ate um <strong>APP</strong> ou ate mesmo <strong>UM SITE</strong> quer estara no <strong>GOOGLE</strong> ne kkk bom esse <strong>APP</strong> vou fala assim ok mais bom <strong>ESSE APP</strong> nao se muito sobre ele mais relaxa que o nosso <strong>PROFESSOR</strong> irar <strong>EXPLICAR</strong> bem direto com mais <strong>DETALHE</strong> ok mais bom oq eu eu sei e <strong>UM SITE</strong> de <strong>ARMAZENA</strong> nao pode ser isso mais <strong>ASSIM</strong> que eu me lembro e um <strong>SITE</strong> de <strong>ARMAZENAMENTO</strong> tambem mais vamos deixa e enrrolando e vamos <strong>DEIXA</strong> o nosso <strong>PROFESSOR</strong> explicar bem <strong>MELHOR</strong> ja o <strong>GIT</strong> eu <strong>NAO</strong> sei nada <strong>SOBRE</strong> ele pois o nosso <strong>PROFESSOR</strong> ira explicar melhor vamos la mais bom pra voçe que esta começando <strong>AGORA</strong> e quiser sabe mais <strong>APROFUNDAMENTE</strong> o que e <strong>GIT</strong> e o que e <strong>GITHUB</strong> voçe pode começa por aqui e abe um <strong>POUCO</strong> mais quando voçe termina esse <strong>MODULO</strong> e se voçe vai querer <strong>SABER</strong> mais se <strong>APROFUNDA</strong> mais e mais e so entra no <strong>CANAL</strong> do nosso <strong>PROFESSOR</strong> gustavo guanabara e procura <strong>O ASUNTO</strong> onde fala so obre <strong>GIT</strong> e <strong>GITHUB</strong> e la e onde voçe ira saber mais <strong>AFUNDO</strong> sobre esses <strong>DOIS OK</strong> mais bom vamos la pessoal pra o video.</p>
+
+<h2> O QUE SAO ESSES DOIS E PRA QUE SERVE?</h2>
+
+<p>bom mais antes de começa novamente kkk irei fala que <strong>O QUE VOÇE</strong> ira <strong>APRENDER</strong> aqui <strong>NAO</strong> e a maneira que ira se <strong>APROFUNDA</strong> nesses <strong>DOIS ASUNTOS</strong> irei fala ou ate mesmo <strong>O NOSSO PROFESOR</strong> ira fala se voçe esta vendo isso no <strong>CURSO</strong> e so o <strong>BASICO</strong> desses <strong>DOIS</strong> ok pessoal e novamente <strong>SE VOÇE</strong> quiser <strong>SABER MELHOR</strong> esses <strong>DOIS ASSUNTOS</strong> e so entra no cana do <strong>YOUTUBE</strong> e pesquisa por <strong>GUSTAVO GUANABARA GIT E GITHUB</strong> ok aqui so iremso fala o <strong>BASICO</strong> entao vamos la ou como eu posso fala <strong>SOMENTE O NECESSARIO</strong> mais entende fala dos <strong>DOIS</strong> irei fala pra voçe <strong>ENTENDER</strong> o que e sao OS <strong>REPOSITORIOS LOCAL</strong> e o <strong>REPOSITORIO REMOTO o REPOSITORIO LOCAL</strong> e onde voçe ira guarda ou ate mesmo <strong>SALVA</strong> as suas coisas ate porque tem os repositorios que <strong>VOÇE IRA CRIAR</strong> online que e onde <strong>VOÇE</strong> ai do outro lado da telinha e onde ira colocar o seu <strong>SITE</strong> no <strong>AR</strong> e fora fazer <strong>BACKUP</strong> nos nossos <strong>ARQUIVOS</strong> mais bom irei fazer na verdade KKK nao vai ter como mas o nosso <strong>PROFESSOR IRA</strong> mosra pra <strong>VOÇE</strong> uma <strong>REPRESENTAÇAO</strong> de como vai ser entao pra <strong>VOÇE</strong> querer ver essa <strong>REPRESENTAÇAO</strong> eu irei deixa o <strong>VIDEO</strong> aqui em baixo pra voçe <strong>ASSISTIR</strong> ok </p>
+
+<p>mais bom irei <strong>RESUMIR</strong> bem resumido pra voçe <strong>ENTAO</strong> imagina que voçe <strong>FEZ O SEU SITE</strong> ne tudo la bunitinho do jeito que <strong>VOÇE</strong> queria e nisso <strong>VOÇE</strong> pega e reslve <strong>CRIAR</strong> digamos o mesmo <strong>SITE</strong> mais mudando pra <strong>DEIXA</strong> de forma <strong>DIFERENTE</strong> ai do nada <strong>VOÇE</strong> pega e <strong>RESOLVE</strong> volta pra o <strong>SITE</strong> que voçe fez da <strong>PRIMEIRA VEZ</strong> fez e voçe pega e nao tem como <strong>PEGA ELE MAIS DE VOLTA</strong> ai o que voçe va fazer se o <strong>SITE</strong> que voçe faz pela <strong>PRIMEIRA VEZ</strong> nao consegue pega ela de <strong>VOLTA</strong> mais relaxa tem um tal de <strong>GERENCIADOR DE VERSOES</strong> que e onde voçe <strong>CONSEGUE</strong> pega ela de volta mais se voçe nao entendeu <strong>ASSISTA</strong> video que o nosso <strong>PROFESSOR</strong> esta <strong>EXPLICANDO</strong> mais... pra isso funcionar voçe ira tem que <strong>GUARDA</strong> pra o seu <strong>GERENCIADOR DE ARQUIVOS</strong> funcionar e dizer pra ele que <strong>VOÇE</strong> quer volta pra o 1 <strong>SITE</strong> que voçe fez ta certo pessoal. e o nome que da pra esse <strong>SOFTWARE</strong> que faz isso e o <strong>"GIT"</strong> eu nao sabia mais agora eu estou <strong>CIENTE</strong> que o que e o <strong>"GIT"</strong> OK.</p>
+
+<p><strong>BOM</strong>  a pergunta que nao quer <strong>CALAR</strong> pra quer eu <strong>IREI</strong> usar o<strong> GIT? BOM</strong> primeieramente ne ele e <strong>LITERALMENTE GRATUITO</strong> totalmente de <strong>GRAÇA </strong>e outra coisa ele e de <strong>SOFTWARE</strong> e foi <strong>CRIADO</strong> do mesmo <strong>CRIADOR</strong> do <strong>LINUX</strong> ja o <strong>LINUX</strong> ele é um sistema operacional de código aberto, baseado no <strong>Unix</strong>, criado por <strong>Linus Torvalds em 1991</strong>. Ele gerencia os recursos do computador e permite que <strong>softwares</strong> sejam executados. É usado em servidores, computadores pessoais, celulares (<strong>como o Android</strong>), roteadores, e supercomputadores. Há várias distribuições (ou <strong>"distros"</strong>) de <strong>Linux</strong>, como <strong>Ubuntu</strong>, Fedora e Debian alem dele <strong>CRIADOR O INUX</strong> ele nao <strong>SO CROIU</strong> o linux <strong>MAIS TAMBEM</strong> croiu o <strong>GITHUB QUE NA</strong> proxima aula <strong>IREMOS</strong> instalar ele no seu <strong>CONPUTADOR</strong> ou seu <strong>PC</strong> ok entao <strong>RESUMINDO</strong> o que e um <strong>GIT</strong> ele e um video em um <strong>SOTWARE</strong> e vai mandar versoes do seu <strong>CODIGO</strong> nao <strong>NECESSARIAMENTE</strong> no seu <strong>CODIGO</strong> mias... um <strong>SITE</strong> dentro do seu <strong>NOTEBOOK</strong> ou <strong>PC</strong> ok mais bom <strong>O NOSSO PROFESSOR</strong> ira MOSTRA uma <strong>SEGUNDA SITUAÇAO</strong> mais nessa <strong>AMOSTRAÇAO</strong> eu <strong>NAO</strong> irei da um <strong>RESUMO</strong> porque provavelmente <strong>VOÇE</strong> ai <strong>NAO</strong> entendeu entao irei deixa <strong>O PROFESSOR</strong> explicar ok e como eu ja falei pra voçe quiser saber a <strong>MOSTRAÇAO</strong> entre no <strong>YOUTUBE</strong> e veja por la ok</p>
+
+<p><strong>BOM</strong> e isso estamos <strong>ENCERRANDO</strong> a nossa aula de <strong>HOJE</strong> e mais eu espero que voçe tenha <strong>ANOTADO</strong> tudo <strong>EXATAMENTE</strong> tudo que o <strong>NOSSO PROFESOR</strong> estava explicando e outra <strong>SE VOÇE</strong> quer saber o que o nosso <strong>PROFESSOR ESTAVA</strong> demostrando e uma <strong>iMAGEM</strong> e so entra no <strong>YOUTUBE E VER POR LA</strong> ouuuuu <strong>VOÇE PODE</strong> ver por aqui onde eu irei colocar um video do meu proprio <strong>SITE</strong> onde voçe pode <strong>ANOTA AI</strong> no seu <strong>NOTEBOOK</strong> ou seu <strong>PC</strong> ok.</p>
+
+<p>bom como eu ja falei irei colocar um <strong>VIDEO</strong> aqui pra voçe pode <strong>ENTENDER</strong> melhor que o nosso <strong>PROFESSOR</strong> esta <strong>EXPLICANDO</strong> ok pessoal e isso por hoje e ate jaja ta certo tmj pessoal flw tropaaaa!</p>
+
+<aside>
+ 
+<h3><strong>QUER APRENDER MAIS? E ENTENDER MELHOR O VIDEO VEJA AQUI EM BAIXO!</strong></h3>
+
+<div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GDGMf2bnHlE?si=Dbi4nfyfrraEIu5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p>BOM E ISSO PESSOAL E LAMBRANDO NUNCA DESISTA DOS SEUS SONHOS QUE UM DIS VC IRA REALIZAR!</p>
+
+<url>
+     <li>1.0 - <abbr title="MODULO 01">FEITO</abbr></li>
+
+    <li>2.0 - <abbr title="MODULO 02">FEITO</abbr></li>
+
+    <li>3.0 - <abbr title="MDULO 03">EM ANDAMENTO</abbr></li>
+
+    <li>4.0 - <abbr title="MODULO 04">AINDA NAO FEITO</abbr></li>
+
+    <li>5.0 - <abbr title="MODULO 05">AINDA NAO FEITO</abbr></li>
+</url>
+
+<P>voçe pode acessar meus <strong>REPOSITORIOS</strong> aqui em baixo</P>
+</aside>
+</article>
+</main>
+<footer>
+    <p>site criado por NYCOLAS WILLIAM para o <a href="https://www.youtube.com/@nycoolaswillian" target="_blank">YOUTUBE</a> ou <a href="https://www.instagram.com/nycoolaswillian/" target="_blank">INSTAGRAM</a></p>
+</footer>

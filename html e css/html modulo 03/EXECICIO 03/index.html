@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>HTML E CSS</title>
+</head>
+<body>
+    <style>
+        @import url('https//fonts.googleapis.com/css2family=bebas+Neue&display=swap');
+
+        @font-face {
+           font-family:"android";
+           src: url(fonte/android.otf) format('opentype')
+       }
+
+        :root{
+            --cor0: rgb(255, 255, 255);
+            --cor1: rgb(194, 177, 157);
+            --cor2: rgb(151, 132, 108);
+            --cor3: rgb(148, 108, 76);
+            --cor4: rgb(133, 90, 34);
+            --cor5: rgb(77, 44, 0);
+            --cor6: rgb(44, 29, 0);
+            --cor7: rgba(238, 202, 119, 0.526);
+            --cor8: rgba(0, 0, 0, 0.526);
+            
+
+            --fonte-padrao: arial, verdana, Helvetica, sans-serif;
+            --fonte-destaque: 'bebas Neue' , cursive;
+            --fonte-android: 'Android', cursive; 
+        }
+
+        h1{
+            color:rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        h2{
+            background-color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        *{
+            margin: 0px;
+            padding: opx;
+        }
+
+        header{
+            min-height: 150px;
+            text-align: center;
+            padding:40px;
+        background-image: linear-gradient(to bottom,var(--cor3), var(--cor6))
+        }
+
+        header > h1{
+            color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 4.5em;
+            text-shadow: 8px 12px black;
+        }
+
+        header > p{
+            color:white;
+            font-size: 2.0em;
+            max-width: 600px;
+            margin: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-shadow: 7px 6px black;
+        }
+
+        nav{
+            background-color: var(--cor6);
+            padding: 10px;
+            box-shadow: 0px 10px 7px black;;
+        }
+
+        main{
+            color: rgb(0, 0, 0);
+            min-width: 300px;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 90px black;
+            border-radius:10px;
+        }
+
+        body{
+            background-color: var(--cor5);
+        }
+
+        main h1{
+            color: var(--cor5);
+            font-family: var(--fonte-android);
+        }
+
+        main h2{
+            font-family: var(--fonte-android);
+            color: var(--cor6);
+            font-size: 1.5em;
+            background-image: linear-gradient(to right, var(--cor1), transparent);
+            text-indent: 8px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        main img.pequena{
+            margin: auto;
+            display: block;
+            max-width: 350px;
+            width: 50%;
+        }
+
+        div.video{
+            background-color: var(--cor5);
+            margin: 0px -20px 30px -20px;
+            padding:20px;
+            padding-bottom: 59%;
+            position: relative;
+        }
+
+        div.video > iframe{
+             position: absolute;
+             top: 5%;
+             left: 5%;
+             width: 90%;
+             height: 90%;
+        }
+
+        footer{
+            background-color: var(--cor5);
+            color: white;
+            text-align: center;
+            font-size: 0.8em;
+            padding: 5px;
+        }
+
+        aside > h3{
+            margin: -10px -10px -10px;
+            border-radius: 10px 10px 0px 0px;
+            background-color: var(--cor4);
+            color: white;
+            padding: 15px;
+            }
+
+            aside{
+            background-color: var(--cor1);
+            padding: 10px;
+            border-radius: 10px;
+            columns: 1;
+            list-style-type: '\2705\00A0\00A0';
+            box-shadow: 3px 3px 10px black;
+        }
+
+        footer a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer a:hover{
+            text-decoration: underline;
+            color: var(--cor1);
+        }
+        
+
+        a:hover{
+        background-color: var(--cor3);
+        color:var(--cor6)
+       }
+
+       a{
+        color: var(--cor0)
+       }
+       a{
+        font-weight: bold;
+       }
+
+       nav > a{
+        padding: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+        transition-duration: 1s;      
+       }
+
+       iframe{
+        margin: auto;
+        display: block;
+       }
+
+       main p{
+        margin: 15px 0px;
+        text-align: justify;
+        text-indent: 30px;
+        font-size: 1.5em;
+        line-height: 1.8em;
+        font-weight: bolder;
+       }
+
+       main strong{
+        color: var(--cor4);
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding: 2px 6px;
+       } 
+    </style>
+    <head>
+<body>
+    <header>
+        <h1><strong>MODULO 03 DO CAPITULO 18 ATE O 21!</strong></h1>
+        <P><strong>INSTALANDO AS COISAS NO SEU NOTEBOOK E SEU PC!</strong></P>
+    </header>
+
+    <nav>
+        <a href="#"><abbr title="INICIO"><strong>HOME</strong></abbr></a>
+        <a href="#"><abbr title="NOVAS NOTICIAS VC VERA AQUI"><strong>NOTICIAS</strong></abbr></a>
+        <a href="#"><abbr title="AQUI VOÇE IRA VER A NOVAS NOVIDADES OU COMPO PODEMOS DIZR CURIOSIDADES"><strong>CURIOSIDADES</strong></abbr></a>
+        <a href="#"><abbr title="POR ESSE NUMERO 81963634284"><strong>FALE CONOSCO</strong></abbr></a>
+    </nav>
+    <main>
+        <article>
+            <h2>BOM VAMOS COMEÇA A NOSSA AULA DO MODULO 03  CAPITULO 18 ATE O CAPITULO 21!</h2>
+
+<p><strong>BOM</strong> vamos la <strong>IREMOS</strong> começa mais uma aula <strong>QUE CADA DIA</strong> esta ficando mais <strong>DIVERTIDO</strong> e cada vez estamos <strong>APRENDENDO</strong> muitas coisas <strong>NOVAS</strong> que <strong>EXISTE</strong> no <strong>HTML E CSS</strong> e essas <strong>COISAS</strong> que estamos <strong>APRENDENDO</strong> sao as novas <strong>TECNOLOGIAS</strong> onde vamos <strong>APRENDER</strong> a <strong>CRIAR SITES</strong> mais bom vamos pra o <strong>ASSUNTO</strong> bem <strong>SE VOÇE</strong> nao viu a <strong>AULA</strong> anterior <strong>VOLTE</strong> pra ela e va <strong>ASSISTIR</strong> porque essas <strong>DUAS</strong> aulas <strong>QUE VOÇE</strong> nao <strong>VIU</strong> sao as <strong>AULA</strong> que voçe ira <strong>APRENDER</strong> durante o <strong>ASSUNTO</strong> desse <strong>MODULO</strong> que e no caso <strong>O MODULO 03</strong> e <strong>DIANTES</strong> desse <strong>AULA</strong> pra <strong>FRENTE</strong> voçe ira <strong>INSTALAR</strong> os "<strong>APP</strong>" que o <strong>NOSSO PROFESSOR</strong> ira <strong>MOSTRA</strong> ok e outra coisa <strong>NUNCA</strong> esqueça de <strong>ANOTA EXATAMENTE TUDO</strong> que ele estara <strong>EXPLICANDO</strong> ate porque se voçe for <strong>PRECISA</strong> de algo que voçe <strong>JA ASSISTIU</strong> voçe ira <strong>VER</strong> que estara <strong>ANOTA</strong> tudo no seu <strong>NOTEBOOK</strong> e seu <strong>PC</strong> porque daqui pra frente possa <strong>SER QUE VOÇE</strong> possa estuda <strong>DAQUI PRA FRENTE</strong> ok pessoal entao vamos pra a <strong>AULA DE HOJE</strong> lest gooooo!<p>
+
+<h2>VAMOS INSTALAR AS COISAS NO SEU NOTEBOOK OU PC!</h2>
+
+<p><strong>BOM</strong> vamos la como ja vimos nas <strong>DUAS</strong> aulas <strong>ANTERIORES</strong> vimos o <strong>CONCEITO BASICO</strong> de cada coisa vimos <strong>TAMBEM</strong> o que e <strong>"GIT"</strong> e o que e <strong>"GITHUB"</strong> como eu ja falei se voçe <strong>NAO ASSISTIU</strong> volte e va <strong>ASSISTIR</strong> porque ele esta explicando <strong>DETALHE</strong> por <strong>DETALHER</strong> e outra como eu <strong>JA FALEI</strong> na aula <strong>ANTERIOR</strong> e vou fala novamente <strong>SE VOÇE</strong> que saber mais <strong>AFUNDO</strong> sobre <strong>"GIT"</strong> e <strong>"GITHUB"</strong> e so entra <strong>NO YOUTUBE</strong> e pesquisa por <strong>GUSTAVO GUANABARA</strong> sobre <strong>GIT</strong> e <strong>GITHUB</strong> ok pessoal ate porque ele so <strong>FALOU O BASICO</strong> de cada um <strong>DELES</strong> ta certo mais ok vamos pra as <strong>INSTALAÇOES</strong> do seu <strong>NOTEBOOK</strong> e se <strong>PC</strong> mais bom vamos pra as <strong>INSTALAÇOES</strong> primeiramente abra o seu <strong>NOTEBOOK</strong> ou seu <strong>PC</strong> sim e <strong>OUTRA</strong> coisa e <strong>IMPORTANTE</strong> saber <strong>MAIS VOÇE DEVE ESTA SE</strong> pergutando <strong>MAIS NYCOLAS</strong> eu estou no <strong>WINDWOS 10 OU 8 ETC...</strong> calma pessoal relaxa isso ai <strong>NAO VAI</strong> influir em <strong>NADA NAO</strong> ok voçe pode esta em <strong>QUALQUER WINDWOS</strong> que ira funcionar do mesmo <strong>JEITO</strong> contanto que ele seja <strong>64BITS</strong> se for 64 e o seu <strong>NOTEBOOOK</strong> ou seu <strong>PC</strong> for o <strong>WINDWOS 10 ou 7</strong> etc.. ira do mesmo jeito ok so pra <strong>LEMBRA</strong> vamos pra instalaçoes </p>
+
+<h2>INSTALANDO AS FERRAMENTAS NO SEU NOTEBOOK OU PC!</h2>
+
+<p><strong>BOM</strong> vamos la pras <strong>INSTALAÇOES</strong> bom primeiramente entre no seu <strong>NOTEBOOK</strong> ou seu <strong>PC</strong> e procure e entre no <strong>GOOGLE</strong> e la voçe ira <strong>PESUISA POR "GIT"</strong> depis que voçe dr <strong>ENTER</strong> n seu <strong>TECLADO</strong> ira aparecer varios <strong>LINKS</strong> o link que voçe ira <strong>ENTRA</strong> e onde tem o nome <strong>"GIT"</strong> nisso voçe ira entra nele e ira <strong>APARECER</strong> varios <strong>LINKS</strong> mais o <strong>LINK</strong> que voçe ira entra o onde tem <strong>SO O NOME DO APP</strong> ok pessoal entrando nesse <strong>LINK</strong> voçe ira colocar pra <strong>BAIXAR</strong> nisso que voçe colocar pra <strong>BAIXAR</strong> depois que <strong>BAIXAR</strong> o seu <strong>GIT</strong> estara no seu <strong>ARQUIVO</strong> e nisso voçe ira <strong>CLICA NELE</strong> e ira aparacer uma mimi <strong>TELA</strong> que ira a mostra se voçer quer <strong>CONTINUAR</strong> a baixar o <strong>APP</strong> e nisso ira mostra ja <strong>DENTRO</strong> do <strong>APP</strong> ok pronto depois que voçe baixar o <strong>GIT</strong> vole ira <strong>BAIXAR</strong> o <strong>GITDESCKTOP</strong> que e outra <strong>FERRAMENTA</strong> que voçe <strong>IRA USAR</strong> tambem que e totalmente <strong>DITREFENTE</strong> como ja falamos <strong>SOBRE ISSO</strong> bom quando voçe for pesquisa por o nome <strong>GITDESCKTOP</strong> o <strong>LINK</strong> que voçe ira entra e esse aqui oh irei colocar pra vcs ver e poder coloca ai tambem ok <strong>"GitHub Desktop | Simple collaboration from your desktop"</strong> esse aqui <strong>PESSOAL</strong> depois que voçe coloca o <strong>LINK</strong> voçe ira entra <strong>NELE</strong> e nisso no voçe <strong>IRA COLOCAR</strong> pra baixar depois que voçe <strong>BAIXAR mais... LEMBRANDO</strong> tem que ser o <strong>WINDWOS</strong> com <strong>64BIT</strong> ok pessoal nao tem <strong>PROBLEMA</strong> se for o <strong>WINDWOS 10 ou 7 ETC...</strong> o importante e se tiver o <strong>64 bit</strong> mais bom vamos la.</p>
+
+<p>bom depois <strong>QUE VOÇE</strong> baixar os <strong>DOIS APP</strong> tudo <strong>CERTINHO</strong> nisso voçe ira <strong>BAIXAR</strong> primeiro o <strong>"GIT"</strong>  e depois o <strong>"GITHUB DESCKOP" OK PESSOAL</strong>  e tudo por sequencia <strong>BOM ENTRANDO NO APP do GIT</strong> bom quando <strong>ABRI</strong> o <strong>APP</strong> do git voçe ira fazer as digamos que as <strong>LINÇENÇAS</strong> ok na verdade se <strong>VOÇE</strong> quiser entender <strong>MELHOR</strong> entre no <strong>YOUTUBE</strong> e pesquise por <strong>GUSTAVO GUANABARA</strong>  e procure por o <strong>MODULO 03</strong> e o 3 video onde ele esta <strong>ENSINANDO</strong>  a baixar os <strong>DOIS APP</strong> ok so assim voçe ira <strong>ENTENDER</strong> melhor ouuuu <strong>VOÇE PODE</strong> ver o <strong>VIDEO</strong> com mais facilidade <strong>PELO O MEU SITE</strong> ok eu irei colocar aqui pra voçes pra poder <strong>ASSISTIR</strong> ouuu tambem kkk voçe pode <strong>ENTRA</strong> no <strong>SITE</strong> so <strong>PRORPIRO</strong> gustavo guanabara ta mais voçe deve esta <strong>PENSANDO</strong> qual nycolas? o <strong>SITE DO CURSO EM VIDEO</strong> onde la voçe pode como eu ja falei <strong>RECEBER</strong> os seus <strong>CERTIFICADOS</strong> isso eu ja falei na <strong>AULA</strong> anterior ok e ate mesmo <strong>O PROFESSOR FALOU</strong> no <strong>COMEÇO DAS AULAS</strong> mais va la ver por la ate porque por aqui e muto <strong>RUIM</strong> pra poder fazer e ao mesmo <strong>TEMPO</strong> explicar pra vcs e um pouco dificil mais se voçe quer <strong>PRESTA MAIS ATENÇAO</strong> e enterder o que o <strong>PROFESSOR</strong> gustavo guanabara ta falando e <strong>ENSINANDO</strong> a instalar as <strong>FERRAMENTAS</strong> e so ver o <strong>VIDEO</strong> ok alem de voçe baixar os <strong>VIDEOS</strong> provavelmente hoje ainda <strong>NESSE VIDEO</strong> vamos entra nos <strong>APP</strong> mais e so pra poder <strong>CONFIGURA</strong> ok galera vamos la <strong>PESTA ATENÇAO</strong> que o nosso <strong>PROFESSOR</strong> esta explicando okay bom <strong>DEPOIS</strong> que voçe <strong>FIZER TUDO CERTO</strong> que o professor <strong>EXPLICOU</strong> o seu <strong>GIT</strong> ja estara <strong>INSTALADO</strong> mais o nosso <strong>PROFESSOR</strong> disse que e bom <strong>REINICIAR</strong> o seu <strong>NOTEBOOK</strong> ou seu <strong>PC</strong> que ele dise que o seu <strong>GIT</strong> funcione um pouco <strong>MELHOR</strong> okay pessoal entao <strong>REINICIE</strong> bom depois que seu <strong>NOTEBOOK</strong> ou seu <strong>PC</strong> estara <strong>REINICIADO</strong> bom lembrando que <strong>O NECESSARIO</strong> foi instalr <strong>PRIMEIRO FOI</strong> o <strong>"GIT"</strong> okay depois que voçe ja tiver <strong>INSTALADOR</strong> o <strong>GIT</strong> depois voçe pode instalar o <strong>"GITHUBDESCKOP"</strong> ok </p>
+
+<p>bom depois que voçe <strong>JA TIVER INSTALADO O GIT</strong> voçe ira entra <strong>NO GITHUBDESCKOP</strong> pra <strong>PODER</strong> instalar porque e <strong>UM DE CADA VEZ</strong> ok bom agora vamos <strong>INSTALAR</strong> o <strong>GITHUBDESCKOP</strong> isso e depois que <strong>TIVER</strong> reiniciado o seu <strong>PC</strong> ou seu <strong>NOTEBOOK</strong> ok pessoal e bom entre agora no seu <strong>APP</strong> que foi <strong>BAIXADO</strong> agora iremos instalar e nisso como eu ja <strong>FALEI</strong> e irei fala <strong>NOVAMENTE</strong> se <strong>VOÇE</strong> quiser <strong>ENTENDER</strong> melhor o professor <strong>INSTALANDO</strong> o <strong>GITHUBDESCKOP</strong> e so entra no <strong>YOUTUBE</strong> ou no <strong>CURSO EM VIDEO</strong> que e onde eu irei <strong>RECEBER O</strong> meu <strong>CERTIFICADO</strong> ouuuuu ate mesmo se voçe <strong>QUISER</strong> ver o video dele e so entra no meu <strong>SITE</strong> onde voçe esta agora <strong>LENDO</strong> que la em <strong>BAIXAR</strong> eu deixarei <strong>O VIDEO</strong> explicando ai fica ate facil pra <strong>VOÇE</strong> pois 1 <strong>VOÇE USA</strong> pra ler o que eu <strong>ESTAREI ESCREVENDO</strong> e tambem voçe <strong>ESTARA</strong> vendo o video e o <strong>OUTRO</strong> claro se voçe tiver 2 <strong>NOTEBOOK</strong> ou ate mesmo <strong>PC</strong> ok e nisso assim pra voçe fica mais <strong>FACIL</strong> pra voçe <strong>FAZER</strong> no seu <strong>NOTEBOOK</strong> ou ate mesmo voçe pode e claro se voçe <strong>NAO TIVER</strong> 2 notebook ou pc voçe pega o seu <strong>NOTEBOOK</strong> ou seu <strong>PC</strong> pra poder fazer as <strong>INSTALAÇOES</strong>  e no seu <strong>CELULAR</strong> voçe <strong>PODE</strong> ver o <strong>VIDEO</strong> que o nosso <strong>PROFESSOR</strong> estava <strong>EXPLICANDO</strong> okay bom mais <strong>AGORA</strong> vamos deixa de <strong>ENRROLAÇAO</strong> e vamos <strong>PRESTA</strong> atençao as <strong>INSTALAÇOES</strong> pra poder fazer <strong>TUDO CERTO</strong> bom <strong>DEPOIS</strong> que voçe tiver <strong>FEITO</strong> as <strong>INSTALAÇOES</strong> tudo <strong>CERTO</strong> iremos para por aqui kkkkkk <strong>MAIS VOÇE DEVE ESTA SE</strong> pergutando mais ja <strong>NYCOLAS?</strong> eu direi sim mais... nos <strong>IREMOS</strong> volta na <strong>PROXIMA</strong> aula porque iremos <strong>CRIAR</strong> uma conta no <strong>GITHUBDESCKOP</strong> pra poder ser <strong>REMOTO</strong> ok entao ate a <strong>PROXIMA</strong> pessoal entao <strong>NAO</strong> se esqueça se <strong>ANOTA</strong> tudo e fazer todas as <strong>INSTRUÇOES</strong> ok ate jaja!</p>
+
+<p><strong>BOM</strong> e isso estamos <strong>ENCERRANDO</strong> a nossa aula de <strong>HOJE</strong> e mais eu espero que voçe tenha <strong>ANOTADO</strong> tudo <strong>EXATAMENTE</strong> tudo que o <strong>NOSSO PROFESOR</strong> estava explicando e outra <strong>SE VOÇE</strong> quer saber o que o nosso <strong>PROFESSOR ESTAVA</strong> demostrando e uma <strong>iMAGEM</strong> e so entra no <strong>YOUTUBE E VER POR LA</strong> ouuuuu <strong>VOÇE PODE</strong> ver por aqui onde eu irei colocar um video do meu proprio <strong>SITE</strong> onde voçe pode <strong>ANOTA AI</strong> no seu <strong>NOTEBOOK</strong> ou seu <strong>PC</strong> ok.</p>
+
+<p>bom como eu ja falei irei colocar um <strong>VIDEO</strong> aqui pra voçe pode <strong>ENTENDER</strong> melhor que o nosso <strong>PROFESSOR</strong> esta <strong>EXPLICANDO E ENSINANDO A INSTALAR AS APP</strong> ok pessoal e isso por hoje e ate jaja ta certo tmj pessoal flw tropaaaa!</p>
+
+<aside>
+ 
+<h3><strong>QUER APRENDER MAIS? E ENTENDER MELHOR O VIDEO VEJA AQUI EM BAIXO!</strong></h3>
+
+<div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NgWExh3bswg?si=tE4gTTdqsDRRhA69" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p>BOM E ISSO PESSOAL E LAMBRANDO NUNCA DESISTA DOS SEUS SONHOS QUE UM DIS VC IRA REALIZAR!</p>
+
+<url>
+     <li>1.0 - <abbr title="MODULO 01">FEITO</abbr></li>
+
+    <li>2.0 - <abbr title="MODULO 02">FEITO</abbr></li>
+
+    <li>3.0 - <abbr title="MDULO 03">EM ANDAMENTO</abbr></li>
+
+    <li>4.0 - <abbr title="MODULO 04">AINDA NAO FEITO</abbr></li>
+
+    <li>5.0 - <abbr title="MODULO 05">AINDA NAO FEITO</abbr></li>
+</url>
+
+<P>voçe pode acessar meus <strong>REPOSITORIOS</strong> aqui em baixo</P>
+</aside>
+</article>
+</main>
+<footer>
+    <p>site criado por NYCOLAS WILLIAM para o <a href="https://www.youtube.com/@nycoolaswillian" target="_blank">YOUTUBE</a> ou <a href="https://www.instagram.com/nycoolaswillian/" target="_blank">INSTAGRAM</a></p>
+</footer>

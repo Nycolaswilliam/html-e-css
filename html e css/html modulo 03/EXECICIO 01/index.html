@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>HTML MODULO 3</title>
+    <style>
+@import url('https//fonts.googleapis.com/css2family=bebas+Neue&display=swap');
+
+        @font-face {
+           font-family:"android";
+           src: url(fonte/android.otf) format('opentype')
+       }
+
+        :root{
+            --cor0: rgb(255, 255, 255);
+            --cor1: rgb(194, 157, 157);
+            --cor2: rgb(151, 108, 108);
+            --cor3: rgb(148, 76, 76);
+            --cor4: rgb(133, 34, 34);
+            --cor5: rgb(77, 0, 0);
+            --cor6: rgb(44, 0, 0);
+            --cor7: rgba(238, 202, 119, 0.526);
+            --cor8: rgba(0, 0, 0, 0.526);
+            
+
+            --fonte-padrao: arial, verdana, Helvetica, sans-serif;
+            --fonte-destaque: 'bebas Neue' , cursive;
+            --fonte-android: 'Android', cursive; 
+        }
+
+        h1{
+            color:rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        h2{
+            background-color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        *{
+            margin: 0px;
+            padding: opx;
+        }
+
+        header{
+            min-height: 150px;
+            text-align: center;
+            padding:40px;
+        background-image: linear-gradient(to bottom,var(--cor3), var(--cor6))
+        }
+
+        header > h1{
+            color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 4.5em;
+            text-shadow: 8px 12px black;
+        }
+
+        header > p{
+            color:white;
+            font-size: 2.0em;
+            max-width: 600px;
+            margin: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-shadow: 7px 6px black;
+        }
+
+        nav{
+            background-color: var(--cor6);
+            padding: 10px;
+            box-shadow: 0px 10px 7px black;;
+        }
+
+        main{
+            color: rgb(0, 0, 0);
+            min-width: 300px;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 90px black;
+            border-radius:10px;
+        }
+
+        body{
+            background-color: var(--cor5);
+        }
+
+        main h1{
+            color: var(--cor5);
+            font-family: var(--fonte-android);
+        }
+
+        main h2{
+            font-family: var(--fonte-android);
+            color: var(--cor6);
+            font-size: 1.5em;
+            background-image: linear-gradient(to right, var(--cor1), transparent);
+            text-indent: 8px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        main img.pequena{
+            margin: auto;
+            display: block;
+            max-width: 350px;
+            width: 50%;
+        }
+
+        div.video{
+            background-color: var(--cor5);
+            margin: 0px -20px 30px -20px;
+            padding:20px;
+            padding-bottom: 59%;
+            position: relative;
+        }
+
+        div.video > iframe{
+             position: absolute;
+             top: 5%;
+             left: 5%;
+             width: 90%;
+             height: 90%;
+        }
+
+        footer{
+            background-color: var(--cor5);
+            color: white;
+            text-align: center;
+            font-size: 0.8em;
+            padding: 5px;
+        }
+
+        aside > h3{
+            margin: -10px -10px -10px;
+            border-radius: 10px 10px 0px 0px;
+            background-color: var(--cor4);
+            color: white;
+            padding: 15px;
+            }
+
+            aside{
+            background-color: var(--cor1);
+            padding: 10px;
+            border-radius: 10px;
+            columns: 1;
+            list-style-type: '\2705\00A0\00A0';
+            box-shadow: 3px 3px 10px black;
+        }
+
+        footer a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer a:hover{
+            text-decoration: underline;
+            color: var(--cor1);
+        }
+        
+
+        a:hover{
+        background-color: var(--cor3);
+        color:var(--cor6)
+       }
+
+       a{
+        color: var(--cor0)
+       }
+       a{
+        font-weight: bold;
+       }
+
+       nav > a{
+        padding: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+        transition-duration: 1s;      
+       }
+
+       iframe{
+        margin: auto;
+        display: block;
+       }
+
+       main p{
+        margin: 15px 0px;
+        text-align: justify;
+        text-indent: 30px;
+        font-size: 1.5em;
+        line-height: 1.8em;
+        font-weight: bold;
+       }
+
+       main strong{
+        color: var(--cor4);
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding: 2px 6px;
+       } 
+    </style>
+    <head>
+<body>
+    <header>
+        <h1><strong>MODULO 03 VAMOS?</strong></h1>
+        <P><strong>NUNCA DESISTA QUE UM DIA VC IRA CHEGA LA ONDE VC DESEJA IR!</strong></P>
+    </header>
+
+    <nav>
+        <a href="#"><abbr title="INICIO"><strong>HOME</strong></abbr></a>
+        <a href="#"><abbr title="NOVAS NOTICIAS VC VERA AQUI"><strong>NOTICIAS</strong></abbr></a>
+        <a href="#"><abbr title="AQUI VOÇE IRA VER A NOVAS NOVIDADES OU COMPO PODEMOS DIZR CURIOSIDADES"><strong>CURIOSIDADES</strong></abbr></a>
+        <a href="#"><abbr title="POR ESSE NUMERO 81963634284"><strong>FALE CONOSCO</strong></abbr></a>
+    </nav>
+    <main>
+        <article>
+            <h2>BOM VAMOS COMEÇA A NOSSA AULA!</h2>
+
+<p>Bom vamos la iremos volta ne ver as aulas ate porque esses dias estavamos fazendo <strong>nosso 1 SITE</strong> onde ainda estavamos no <strong>MODULO 02</strong> certo na verdade estavamos no finalzinho do nosso <strong>MODULO 02</strong> onde começamos a fazer <strong>o nosso primeiro site que foi de ANDROID</strong> se voçe nao viu volta na aula anteior pra poder entender o que vimos tudo no <strong>MODULO 02</strong> entao resumindo volte <strong>IMEDIATAMENTE porque e muito IMPORTANTE</strong> voçe sabe o que vimos POIS foi onde começamos a construir o nosso 1 SITE e onde começamos a nos se <strong>APROFUNDA cada vez mais e mais...</strong> ENTAO irei dizer mais uma vez VOLTE e va FAZER O SEU 1 SITE apesar que esse primeira SITE e so foi pra vc ver o que iremos <strong>APRENDER E TRABALHAR</strong> com isso se voçe viu da um pouco de TRABALHOR KKK se voçe repara e <strong>no dificil onde nos CONSEGUIMOS CONQUISTA AS COISAS</strong> mais vamos la estou enrrolando demais vamos pra a nossa aula ok.<p>
+
+<h2>BOM PRA COMEÇA O QUE IREMOS APRENDER NO MODULO 03?</h2>
+
+<p><strong>bom o que iremos aprender no modulo 03</strong> na verdade isso e a introduçao e onde ou o que iremos aprender durante ese modulo ok entao <strong>no caso e o basico so o nosso PROFESSOR explicando</strong> o que iremoa aprender durante esse modulo ok pessoal entao ja pegue seu caderno <strong>como nosso professor ja diz NAO fique igual assistinho neftlix porque isso nao e brincadeira NAO ok</strong>. estamos aqui pra poder saber poder daqui pra frente ser um <strong>PROFISSIONAL ou ate mesmo um VETERANO de CONTRUÇAO DE SITES</strong></p>
+
+<h2>COMO APRENDER A HOSPEDAR E SITES?</h2>
+
+<p>BOM irei explicar um pouco apesar que o nosso professor irar explicar melhor pra voçe poder entender vou explicar <strong>mais se voçe user entender melhor entre no YOUTUBE ou ate mesmo no GITHUB</strong> <strong>mais antes de explicar</strong> irei fala pra que se voçe quiser assistir <strong>pelo GITHUB</strong> ate mesmo se <strong>voçe nao sabe o SITE GITHUB ele e literalmente de GRAÇA e ainda voçe pode ter o seu CERTIFICADO totalmente de GRAÇA ok</strong> me arrenpendir <strong>de NAO ter assistir as AULAS pelo SITE da GITHUB pra poder pega o meu CERTIFICADO</strong> mais bom tem um <strong>PROBLEMINHA pra voçe poder pega o seu CERTIFICADO</strong> voçe ira paga na verdade eu nao sei o nome mais vou fala como se fosse <strong>uma TAXA pra voçe pega o seu CERTIFICADO mais o SITE e totalmente CONFIAVEL</strong> pode fica tranquilo porque <strong>o SITE e do nosso PROFESSOR "gustavo guanabara"</strong> e totalmente confiavel ok NSO tenha MEDO pode ir co TRNQUILIDADE ok.</p>
+
+<p>MAIS relaxa se voçe nao entender o que eu irei exeplicar que <strong>o nosso PROFESSOR esta exeplicando pode fica tranquilo</strong> que eu irei <strong>deixa o video aqui dele exeplicando DIREITO ok</strong> e so voçe dar <strong>o PLAY e assistir a aula</strong> do meu site mesmo que como voçe sabe <strong>vimos algums COMANDOS pra colocar videos do seu proprio SITE</strong> CERTO.</p>
+
+<p>mais bom deixa eu exeplica um pouco de como voçe pode <strong>APRENDER a HOSPEDAR SITES</strong> bom VAMOS LA pra <strong>voçe poder APRENDERa se HOSAPEDAR  a criar SITES</strong> mais bom se voçe <strong>NAO sabe esse CAPITULO vai CAPITULO 18 ate o 21 desse MODULO</strong> e nos ja vamos começa ja <strong>APREDNDENDO a HOSPEDAR o nosso EXECICIO</strong> que ja vimos <strong>UTILIZANDO os serviços do "GITHUB PAGE"</strong> nos ja vamos começa esse <strong>MODULO TAMBEM aprendendo a INSTALAR o GITHUB  e o GITHUB DESKTOP que ira ser muito UTILIZADO durante  a sua JORNADA</strong> ok mais porque nycolas? bom esse <strong>digamos que "APP" voçe alem de CRIAR o seu SITE ira poder SALVAR na NUVEM</strong> no caso pelo "APP" mais calma qe daqui pra frente voçe ira aprender mais com <strong>FACILIDADE ok alem de voçe poder SALVA na NUVEM</strong> voçe ainda pode abri em qualquer LUGAR que voçe estiver mais como assim nycolas? isso mesmo que vole ouviu voçe pode <strong>ABRI em qualquer NOTEBOOK ou ate mesmo PC</strong> ok e ainda voçe pode GUARDA os execicios que voçe ja FEZ nas AULAS anteriores <strong>esse MODULO nao e so ALUNOS que ja sao DIGAMOS que VETERANOS mais tambem pra ALUNOS INICIANTES</strong> como eu kkk mais bom alem de voçe fazer <strong>ESSE CURSO na FACULDADE mais tambem em CASA</strong> ok </p>
+
+<p>BOM alem e termina o<strong> CAITULO 18 DESSE MODULO voçe ira entra no CAPITULO 19</strong> onde nos iniciaresmos a na verdade se <strong>APROFUNDAR um POUQUINHO MAIS</strong> ok que e no caso onde iremos ver mais na <strong>PARTE de CSS</strong> que e no caso <strong>CONFIFURANDO AS IMAGENS de FUNDO</strong> e ainda com os <strong>EFEITOS bem LEGUAIS pra PODER trabalhar</strong> ok pessoal muita coisa ne kkk sim sim eu sei voçe ainda ira <strong>PODE CONFIGURA</strong> as imagens com background-color SAO ELAS <strong>"background-image" background-with thee" "background-position" "background-size" e por ULTIMO "background-attachment"</strong> na <strong>VERDADE se eu NAO</strong> me engano ja vimos background-image qu sao as configuraçao de imagens por fora mais COMO ASSIM NYCOLAS POR FORA? isso mesmo sao as configuraçaoonde trabalhamos o jeito da imagem que e no caso o <strong>TAMANHO as BORDAS o COMPRIMENTO</strong> isso e tudo medido no "background-image" mais... <strong>NAO</strong> pode ser isso posso esta ate me confudindo do jeito que eu estou falando ok pessoal. vamos tambem fazer <strong>CENTRALIZAÇAO DE IMAGENS</strong> muitos <strong>GRANDES</strong> e vamos tambem fazer um <strong> efeito "PARALLEX"</strong> vamos ver isso tambem deve ser uma coisa muito <strong>NOVA</strong> vamos ver esse tal de <strong>PARALLAX</strong> nesse <strong>MODULO</strong> ok nao se preocupe que vamos começa vou fala que se <strong>ADIANTAR</strong> daqui pra <strong>FRENTE</strong> depois que ver esses <strong>ASSUNTOS</strong> vamos começa a criar <strong>NOVAMENTE</strong> outro <strong>PROJETO DO ZERO</strong> usando <strong>ESSES</strong> assuntos que iremos <strong>VER LOGO LOGO...</strong> nesse modulo <strong>RESUMINDO ESSE MODULOS</strong> iremos ver <strong>MUITAS COISAS</strong> novas que <strong>NAO</strong> vimos no <strong>OUTRO</strong> modulo e <strong>IREMOS</strong> ver nesse <strong>MODULO</strong>. na <strong>VERDADE</strong> esse projeto que iremos <strong>FAZER</strong> e um <strong>PROJETO</strong> bem <strong>SIMPLES</strong> que o nome e <strong>"PROJETO CORDEL"</strong> mais calma pra voçe querer ver esse <strong>PROJETO</strong> irei deixa como eu ja falei o <strong>LINK</strong> do <strong>VIDEO</strong> que o nosso <strong>PROFESSOR</strong> ira mostra ok resumindo <strong>IREMOS COMEÇA</strong> fazer um <strong>NOVO PROJETO</strong> e no <strong>ULTIMO</strong> capitulo que no caso o capitulo20 <strong>IREMOS</strong> coloca esse <strong>PROJETO</strong> no ar alem de voçe aprender  a colocar <strong>SITES NO AR</strong> voçe ira tambem aprender <strong>UM POUCOS DE TABELAS</strong> mais como assim nycolas isso mesmo <strong>TABELAS</strong> aquelas que voçe pode digamos que deixa tudo <strong>ORGANIZADO</strong> do seu <strong>JEITO</strong> ok iremos ver isso tambem <strong>RESUMINDO</strong> muitas <strong>COISAS</strong> bem legais e <strong>DIVERTIDAS</strong> irei te <strong>ENSINA</strong> tambem na parte de tabelas os <strong>EFEITO</strong> de cada <strong>COR</strong> e iremos fala tambem de <strong>MESCLAGEM DE CELULAS</strong> por enquanto e isso ok pessoal. entao e isso por enquanto que iremos <strong>APRENDER</strong> nao so tem isso pra <strong>APRENDER</strong> nesse <strong>MODULOS</strong> fora que tem o <strong>MODULO 04 E 05</strong> pra poder finalizar mais vamos la por fim e isso.</p>
+
+<p>bom como eu ja falei irei colocar um <strong>VIDEO</strong> aqui pra voçe pode <strong>ENTENDER</strong> melhor que o nosso <strong>PROFESSOR</strong> esta <strong>EXPLICANDO</strong> ok pessoal e isso por hoje e ate jaja ta certo tmj pessoal flw tropaaaa!</p>
+
+<aside>
+ 
+<h3><strong>QUER APRENDER MAIS? E ENTENDER MELHOR VEJA AQUI EM BAIXO!</strong></h3>
+
+<div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ofFgnDtn_1c?si=OVwSprkdUkdbkHPp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p>BOM E ISSO PESSOAL E LAMBRANDO NUNCA DESISTA DOS SEUS SONHOS QUE UM DIS VC IRA REALIZAR!</p>
+
+<url>
+    <li>1.0 - <abbr title="MODULO 01">FEITO</abbr></li>
+
+    <li>2.0 - <abbr title="MODULO 02">FEITO</abbr></li>
+
+    <li>3.0 - <abbr title="MDULO 03">EM ANDAMENTO</abbr></li>
+
+    <li>4.0 - <abbr title="MODULO 04">AINDA NAO FEITO</abbr></li>
+
+    <li>5.0 - <abbr title="MODULO 05">AINDA NAO FEITO</abbr></li>
+</url>
+
+<P>voçe pode acessar meus <strong>REPOSITORIOS</strong> aqui em baixo</P>
+</aside>
+</article>
+</main>
+<footer>
+    <p>site criado por NYCOLAS WILLIAM para o <a href="https://www.youtube.com/@nycoolaswillian" target="_blank">YOUTUBE</a> ou <a href="https://www.instagram.com/nycoolaswillian/" target="_blank">INSTAGRAM</a></p>
+</footer>
