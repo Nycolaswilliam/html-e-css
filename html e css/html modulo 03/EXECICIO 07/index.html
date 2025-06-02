@@ -6,6 +6,270 @@
     <title>MODULO 03</title>
 </head>
 <body>
-    
+    <style>
+     @import url('https//fonts.googleapis.com/css2family=bebas+Neue&display=swap');
+
+        @font-face {
+           font-family:"android";
+           src: url(fonte/android.otf) format('opentype')
+       }
+
+        :root{
+            --cor0: rgb(255, 255, 255);
+            --cor1: rgb(194, 172, 157);
+            --cor2: rgb(151, 125, 108);
+            --cor3: rgb(148, 102, 76);
+            --cor4: rgb(133, 74, 34);
+            --cor5: rgb(77, 28, 0);
+            --cor6: rgb(44, 18, 0);
+            --cor7: rgba(238, 202, 119, 0.526);
+            --cor8: rgba(0, 0, 0, 0.526);
+            
+
+            --fonte-padrao: arial, verdana, Helvetica, sans-serif;
+            --fonte-destaque: 'bebas Neue' , cursive;
+            --fonte-android: 'Android', cursive; 
+        }
+
+        h1{
+            color:rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        h2{
+            background-color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        *{
+            margin: 0px;
+            padding: opx;
+        }
+
+        header{
+            min-height: 150px;
+            text-align: center;
+            padding:40px;
+        background-image: linear-gradient(to bottom,var(--cor3), var(--cor6))
+        }
+
+        header > h1{
+            color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 4.5em;
+            text-shadow: 8px 12px black;
+        }
+
+        header > p{
+            color:white;
+            font-size: 2.0em;
+            max-width: 600px;
+            margin: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-shadow: 7px 6px black;
+        }
+
+        nav{
+            background-color: var(--cor6);
+            padding: 10px;
+            box-shadow: 0px 10px 7px black;;
+        }
+
+        main{
+            color: rgb(0, 0, 0);
+            min-width: 300px;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 90px black;
+            border-radius:10px;
+        }
+
+        body{
+            background-color: var(--cor5);
+        }
+
+        main h1{
+            color: var(--cor5);
+            font-family: var(--fonte-android);
+        }
+
+        main h2{
+            font-family: var(--fonte-android);
+            color: var(--cor6);
+            font-size: 1.5em;
+            background-image: linear-gradient(to right, var(--cor1), transparent);
+            text-indent: 8px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        main img.pequena{
+            margin: auto;
+            display: block;
+            max-width: 350px;
+            width: 50%;
+        }
+
+        div.video{
+            background-color: var(--cor5);
+            margin: 0px -20px 30px -20px;
+            padding:20px;
+            padding-bottom: 59%;
+            position: relative;
+        }
+
+        div.video > iframe{
+             position: absolute;
+             top: 5%;
+             left: 5%;
+             width: 90%;
+             height: 90%;
+        }
+
+        footer{
+            background-color: var(--cor5);
+            color: white;
+            text-align: center;
+            font-size: 0.8em;
+            padding: 5px;
+        }
+
+        aside > h3{
+            margin: -10px -10px -10px;
+            border-radius: 10px 10px 0px 0px;
+            background-color: var(--cor4);
+            color: white;
+            padding: 15px;
+            }
+
+            aside{
+            background-color: var(--cor1);
+            padding: 10px;
+            border-radius: 10px;
+            columns: 1;
+            list-style-type: '\2705\00A0\00A0';
+            box-shadow: 3px 3px 10px black;
+        }
+
+        footer a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer a:hover{
+            text-decoration: underline;
+            color: var(--cor1);
+        }
+        
+
+        a:hover{
+        background-color: var(--cor3);
+        color:var(--cor6)
+       }
+
+       a{
+        color: var(--cor0)
+       }
+       a{
+        font-weight: bold;
+       }
+
+       nav > a{
+        padding: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+        transition-duration: 1s;      
+       }
+
+       iframe{
+        margin: auto;
+        display: block;
+       }
+
+       main p{
+        margin: 15px 0px;
+        text-align: justify;
+        text-indent: 30px;
+        font-size: 1.5em;
+        line-height: 1.8em;
+        font-weight: bolder;
+       }
+
+       main strong{
+        color: var(--cor4);
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding: 2px 6px;
+       } 
+    </style>
+    <head>
+<body>
+    <header>
+        <h1><strong>MODULO 03 DO CAPITULO 18 ATE O 21!</strong></h1>
+        <P><strong>INSTALANDO AS COISAS NO SEU NOTEBOOK E SEU PC!</strong></P>
+    </header>
+
+    <nav>
+        <a href="#"><abbr title="INICIO"><strong>HOME</strong></abbr></a>
+        <a href="#"><abbr title="NOVAS NOTICIAS VC VERA AQUI"><strong>NOTICIAS</strong></abbr></a>
+        <a href="#"><abbr title="AQUI VOÇE IRA VER A NOVAS NOVIDADES OU COMPO PODEMOS DIZR CURIOSIDADES"><strong>CURIOSIDADES</strong></abbr></a>
+        <a href="#"><abbr title="POR ESSE NUMERO 81963634284"><strong>FALE CONOSCO</strong></abbr></a>
+    </nav>
+    <main>
+        <article>
+            <h2>BOM VAMOS COMEÇA A NOSSA AULA DO MODULO 03 GERECIANDO REPERTORIO!</h2>
+
+<p>bom vamo começa mais uma a <strong>AULA PESSOAL</strong> primeitramente seja bem vindos a mais uma <strong>AULA</strong> ou ate mesma mais uma aula de <strong>SITE</strong> kkkk bom vamos la nessa aula nos <strong>IREMOS VER</strong> ou ate mesmo iremos fazer <strong>GERENCIAMENTO DE REPOSITORIO</strong> ok pessoal mais antes ne como vcs ja sabe eu irei fazer uma pergunta<strong> VCS ASSISTIRAMAS AULAS ANTERIORES</strong> se voçe nao assistiu volte <strong>IMEDIATAMNTE</strong> pois voçe esta perdendo muitas coisas e inclusive ja baixamos o <strong>"GIT"</strong> e o <strong>"GITDESCKTOP"</strong> e ja fizemos todas as inetalaçoes nao so instalaçoes mais <strong>TAMBEM</strong> todas as configuraçoes ja pra deixa pronto pra poder ja fazer os seus <strong>SITES OK</strong> alem de fazer essas configuraçoes tambem ja <strong>FIZEMOS</strong> ou como posso fala <strong>ja CRIAMOS A CONTA NO GIT</strong> e tambem no <strong>GITDESCKTOP</strong> entao ne se voçe esta ai como se fosse assistinho <strong>"NETIFLIX"</strong> como meu professor fica falando ate porque ele fala pra voçe presta atençao nao so assistir mais tambem <strong>ANOTA TUDO QUE ELE FALA</strong> pois daqui pra frente voçe poe precisa apesar pra quem ta começando agora e sempre bom anota tudo pois assim alem de voçe esta anotando voçe tambem vai <strong>APRENDENDO</strong> prque vai fixa na sua <strong>MENTE</strong> mais bom vamos agora <strong>COMEÇA A NOSSA AULA</strong> vamos la <strong>LEST GOOO!</strong><p>
+
+<p><strong>BOM</strong> vamos la ja pege o seu <strong>NOTEBOOK E SEU PC</strong> e vamos para a pratica bom ja abra o seu <strong>GITDESCKTOP</strong>no notebook ou no seu pc mais antes de começa de <strong>VERDADE</strong> nao sei se voçe na <strong>PERCEBEU OU AINDA NAO</strong> mais se voçe entra no <strong>GITDESCKTOP</strong> ele inicia um <strong>DOWLOUND</strong> pra poder ver se ah uma <strong>ATUALIZAÇAO</strong> que voçe deva fazer ok <strong>BOM</strong> a pergunta que nao quer calar como voçe <strong>TRABALHA</strong> com o seu repositorio mais calma que o nosso querido professor ira explicar agora bom voçe ira clica em <strong>"open visual studo code"</strong> se voçe clica a ele <strong>IMEDIATAMENTE</strong> ira manda voça la pra o <strong>APP</strong> que baixamos que no caso o <strong>"visual studio code"</strong> pronda ate ai tudo bem voçe percebera <strong>TAMBEM</strong> eue ira abri os <strong>SITES</strong> juntos com as configuraçoes vou dizer asim que sao <strong>"readme"</strong> etc... e se voçe <strong>CLICA</strong> nessa pasta ira abri a <strong>DESCRIÇAO</strong> que voçe colocou no video anterior mais como assim nycolas? <strong>ABRA QUE VOÇE</strong> vera e por exemplo dentro dessa <strong>PASTA</strong> se voçe quiser colocar mais coisas na sua <strong>DESCRIÇAO</strong> voçe pode sem problema e so pula uma linha e colocar e nisso voçe vera uma cois <strong>QUE NAO VIMOS</strong> e agora apareceu mais voçe de esta se pergutando mais como assim nycolas sim <strong>EXTAMENTE</strong> em cima no canto esquerdo debaixo da uma lupa vai ter como se fosse <strong>SETAS</strong> ligadas com bolinha e tambem vai ter como se fosse uma <strong>NOTIFICAÇAO</strong> se voçe clica nela me lembrei agora isso ai e como se fosse uma <strong>ALTERAÇAO</strong> onde voçe fez voltando quando voçe clica nela ira ter uma mudança no seu <strong>SITE</strong> que fez isso ai e no <strong>REPOSITORIO LOCAL</strong> ok se voçe nao tiver entendendo entre no youtube e pesquise por <strong>"gustvo guanabara"</strong> onde ele esta ensinando a como colocar um gerenciamente de repositorio okay resumindo o tal do <strong>"gerenciamento e pra voçe nao"</strong> perde vou fala <strong>ASSIM</strong> pra nao perde o seu <strong>SITE</strong> por isso ele esta explicando nesse video exemplo vou da pra vcs quando o seu <strong>NOTEBOOK OU SEU PC</strong> quebra ou queima sla fazer alguma coisa que ele nao liga mais voçe pode fica despreocupado pois os <strong>SEU SITES</strong> nao ira ser apagados ele so estara no <strong>"GIT"</strong> ai e so voçe copiar e colocar novamente no <strong>VISUAL STUDIO CODE</strong> okay resumindo um <strong>"CRTRL C E CTRL V"</strong> isso e claro se voçe estiver no seu <strong>PC OU SEU NOTEBOOk</strong> bom e bem facil ne pessoal se voçe entender pela 1 vez voçe ja sabe <strong>FAZER TUDO</strong> extamente <strong>TUDO</strong> ok bom agr a pergunta que todo <strong>MUNDO FALA</strong> e e quando o repositorio esta vazio? como faz nycolas calma ai irei explicar <strong>EXATAMENTE AGORA MESMO</strong> bom exatamente nao ira ser eu que ira <strong>EXPLICAR</strong> pois ira ser o nosso <strong>PROFESSOR</strong> vamos la irei explicar de forma separada</p>
+
+<h2>E COMO CRIAR UM REPOSITORIO VAZIO</h2>
+
+<p>bom agora o nosso professor ira explicar pra voçe quando estiver com um repositorio vazio vamos la bom dentro do seu <strong>APP QUE BAIXAMOS NAS AULAS PASSADA</strong> que e no caso o nosso app <strong>"GITDESCKTOP"</strong> ah mais voçe deve est se pergutando mais tinha um butao que <strong>CLICAVA E FUNCIONAVA</strong> mais calma ebra o seu <strong>GITDESCKTOP</strong> e la em cima no canto esquerto clica em <strong>FILE</strong> e em baixo tem <strong>"new repositorio"</strong> nisso ja vai aparecer uma telinha mostrando pra voçe pode fazer <strong>DEPOIS QUE VOÇER FAZER ISSO</strong> voçe clica em <strong>"publisch repositorio"</strong> mais porque nycolas se voçe sabe <strong>AINDA NAO CRIAMOS</strong> o nosso repositorio por isso temos que <strong>CRIAR</strong> ele okay nisso depois que voçe criar o nosso repositorio voçe ja vera que ele ja estara <strong>NO SITE DO "GITHUB"</strong> okay bom agora vamos supor que voçe <strong>DESEJA APAGAR O SEU REPOSITORIO</strong> "ah sla deu errado e quer apaga" calma relaxa o que voçe ira e fazer e simples enre no <strong>SITE DO GITHUB</strong> nisso voçe ira procura a pasta que voçe deseja apagar e nisso clica nele e se voçer perceber ou ja percebeu la em cima no canto direito <strong>VAI ESTA O SIMBOLO DE CONFIGURAÇAO</strong> e nisso quando voçe clica nele la em baixo estara <strong>"delete repositorio"</strong> ai e so voçe clicar e colocar a senha mais como assim nycolas digamos que voçe e so copiar o nome que estara a cima okay</p>
+
+<p>bom pessoal estamos terminando por aqui espero que vcs tenham gostado e ate a proxima!</p>
+
+<p>bom como eu ja falei irei colocar um <strong>VIDEO</strong> aqui pra voçe pode <strong>ENTENDER</strong> melhor que o nosso <strong>PROFESSOR</strong> esta <strong>EXPLICANDO E ENSINANDO A FAZER O SEU 1 REPOSITORIO</strong> ok pessoal e isso por hoje e ate jaja ta certo tmj pessoal flw tropaaaa!</p>
+
+<aside>
+ 
+<h3><strong>QUER APRENDER MAIS? E ENTENDER MELHOR O VIDEO VEJA AQUI EM BAIXO!</strong></h3>
+
+<div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Sbcu_GuySjo?si=w4Y31Es65jrojKIU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+<p>BOM E ISSO PESSOAL E LAMBRANDO NUNCA DESISTA DOS SEUS SONHOS QUE UM DIS VC IRA REALIZAR!</p>
+
+<url>
+     <li>1.0 - <abbr title="MODULO 01">FEITO</abbr></li>
+
+    <li>2.0 - <abbr title="MODULO 02">FEITO</abbr></li>
+
+    <li>3.0 - <abbr title="MDULO 03">EM ANDAMENTO</abbr></li>
+
+    <li>4.0 - <abbr title="MODULO 04">AINDA NAO FEITO</abbr></li>
+
+    <li>5.0 - <abbr title="MODULO 05">AINDA NAO FEITO</abbr></li>
+</url>
+
+<P>voçe pode acessar meus <strong>REPOSITORIOS</strong> aqui em baixo</P>
+</aside>
+</article>
+</main>
+<footer>
+    <p>site criado por NYCOLAS WILLIAM para o <a href="https://www.youtube.com/@nycoolaswillian" target="_blank">YOUTUBE</a> ou <a href="https://www.instagram.com/nycoolaswillian/" target="_blank">INSTAGRAM</a></p>
+</footer>
+</body>
+</html>
 </body>
 </html>
