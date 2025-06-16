@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODULO 03</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<style>
+     @import url('https//fonts.googleapis.com/css2family=bebas+Neue&display=swap');
+
+        @font-face {
+           font-family:"android";
+           src: url(fonte/android.otf) format('opentype')
+       }
+
+        :root{
+            --cor0: rgb(255, 255, 255);
+            --cor1: rgb(192, 192, 192);
+            --cor2: rgb(126, 126, 126);
+            --cor3: rgb(80, 80, 80);
+            --cor4: rgb(43, 43, 43);
+            --cor5: rgb(24, 24, 24);
+            --cor6: rgb(29, 29, 29);
+            --cor7: rgba(238, 202, 119, 0.526);
+            --cor8: rgba(0, 0, 0, 0.526);
+            
+
+            --fonte-padrao: arial, verdana, Helvetica, sans-serif;
+            --fonte-destaque: 'bebas Neue' , cursive;
+            --fonte-android: 'Android', cursive; 
+        }
+
+        h1{
+            color:rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        h2{
+            background-color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        *{
+            margin: 0px;
+            padding: opx;
+        }
+
+        header{
+            min-height: 150px;
+            text-align: center;
+            padding:40px;
+        background-image: linear-gradient(to bottom,var(--cor3), var(--cor6))
+        }
+
+        header > h1{
+            color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 4.5em;
+            text-shadow: 8px 12px black;
+        }
+
+        header > p{
+            color:white;
+            font-size: 2.0em;
+            max-width: 600px;
+            margin: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-shadow: 7px 6px black;
+        }
+
+        nav{
+            background-color: var(--cor6);
+            padding: 10px;
+            box-shadow: 0px 10px 7px black;;
+        }
+
+        main{
+            color: rgb(0, 0, 0);
+            min-width: 300px;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 90px black;
+            border-radius:10px;
+        }
+
+        body{
+            background-color: var(--cor5);
+        }
+
+        main h1{
+            color: var(--cor5);
+            font-family: var(--fonte-android);
+        }
+
+        main h2{
+            font-family: var(--fonte-android);
+            color: var(--cor6);
+            font-size: 1.5em;
+            background-image: linear-gradient(to right, var(--cor1), transparent);
+            text-indent: 8px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        main img.pequena{
+            margin: auto;
+            display: block;
+            max-width: 350px;
+            width: 50%;
+        }
+
+        div.video{
+            background-color: var(--cor5);
+            margin: 0px -20px 30px -20px;
+            padding:20px;
+            padding-bottom: 59%;
+            position: relative;
+        }
+
+        div.video > iframe{
+             position: absolute;
+             top: 5%;
+             left: 5%;
+             width: 90%;
+             height: 90%;
+        }
+
+        footer{
+            background-color: var(--cor5);
+            color: white;
+            text-align: center;
+            font-size: 0.8em;
+            padding: 5px;
+        }
+
+        aside > h3{
+            margin: -10px -10px -10px;
+            border-radius: 10px 10px 0px 0px;
+            background-color: var(--cor4);
+            color: white;
+            padding: 15px;
+            }
+
+            aside{
+            background-color: var(--cor1);
+            padding: 10px;
+            border-radius: 10px;
+            columns: 1;
+            list-style-type: '\2705\00A0\00A0';
+            box-shadow: 3px 3px 10px black;
+        }
+
+        footer a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer a:hover{
+            text-decoration: underline;
+            color: var(--cor1);
+        }
+        
+
+        a:hover{
+        background-color: var(--cor3);
+        color:var(--cor6)
+       }
+
+       a{
+        color: var(--cor0)
+       }
+       a{
+        font-weight: bold;
+       }
+
+       nav > a{
+        padding: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+        transition-duration: 1s;      
+       }
+
+       iframe{
+        margin: auto;
+        display: block;
+       }
+
+       main p{
+        margin: 15px 0px;
+        text-align: justify;
+        text-indent: 30px;
+        font-size: 1.5em;
+        line-height: 1.8em;
+        font-weight: bolder;
+       }
+
+       main strong{
+        color: var(--cor4);
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding: 2px 6px;
+       } 
+    </style>
+    <head>
+<body>
+    <header>
+        <h1><strong>MODULO 03 DO CAPITULO 18 ATE O 21!</strong></h1>
+        <P><strong>MANUTENÇAO EM SITES HOSPEDADOS COM HITHUB!</strong></P>
+    </header>
+
+    <nav>
+        <a href="#"><abbr title="INICIO"><strong>HOME</strong></abbr></a>
+        <a href="#"><abbr title="NOVAS NOTICIAS VC VERA AQUI"><strong>NOTICIAS</strong></abbr></a>
+        <a href="#"><abbr title="AQUI VOÇE IRA VER A NOVAS NOVIDADES OU COMPO PODEMOS DIZR CURIOSIDADES"><strong>CURIOSIDADES</strong></abbr></a>
+        <a href="#"><abbr title="POR ESSE NUMERO 81963634284"><strong>FALE CONOSCO</strong></abbr></a>
+    </nav>
+    <main>
+        <article>
+            <h2>BOM VAMOS COMEÇA A NOSSA AULA DO MODULO 03 DE MANUTENÇAO EM SITES HOSPEDADOS NO GITHUB!</h2>
+
+<p>Bom vamos la pessoal iremos COMEÇA MAIS UMS AULA de html e css que estamos se aprofudando cada vez mais pk pessoal entao vamos la MAIS... ne como sempre eu irei dizer JA ASSISTIU AS AULAS ANTERIORES DO NOSSO PROFESSOR gustavo guanaba? ainda nao entao volte pra assitir pois na aula anterior nos vimos "hospedando sites de forma gratuita" bem facil e pratico se voçe nao assitiu volte pois ele esta explicando BEM DIRETINHO e outra coisa ANOTE TUDO EXATAMENTE TUDO QUE ELE ESTA FALANDO uma dica anote tudo que ele esta falando e tambem coloque o que voçe entendeu essa parte que ele explicou ok resumindo coloque tudo ok pessoal mais ok vamos pra aula sim ia acab me esquecendo se voçe NAO ESTIVER ENTENDENDO O QUE EU ESTOU LHE EXPLICANDO voçe pode ver a aula do nosso professor pelo meu SITE OU PELO YOUTUBE pelo meu site eu estou sempre colocando a aula de hoje e se voçe quiser assitir pelo youtube e so coloca la "CURSO EM VIDEO MANUTENÇAO E HOISPENDANDO SITES" ok pode coloca assim desse mesmo jeito que no instante voçe ira encontra ok bom e isso vamos começa a nossa aula de hoje eu estou enrrolando demais les t goooo!<p>
+
+<p>bom pessoal estamos terminando por aqui espero que vcs tenham gostado e ate a proxima!</p>
+
+<p>bom como eu ja falei irei colocar um <strong>VIDEO</strong> aqui pra voçe pode <strong>ENTENDER</strong> melhor que o nosso <strong>PROFESSOR</strong> esta <strong>EXPLICANDO E ENSINANDO A FAZER A MANUTENÇAO DO TEU SITE</strong> ok pessoal e isso por hoje e ate jaja ta certo tmj pessoal flw tropaaaa!</p>
+
+<aside>
+ 
+<h3><strong>QUER APRENDER MAIS? E ENTENDER MELHOR O VIDEO VEJA AQUI EM BAIXO!</strong></h3>
+
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/_jI3782DGDc?si=d1ez1hNokM3xwJel" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p>BOM E ISSO PESSOAL E LAMBRANDO NUNCA DESISTA DOS SEUS SONHOS QUE UM DIS VC IRA REALIZAR!</p>
+
+<url>
+     <li>1.0 - <abbr title="MODULO 01">FEITO</abbr></li>
+
+    <li>2.0 - <abbr title="MODULO 02">FEITO</abbr></li>
+
+    <li>3.0 - <abbr title="MDULO 03">EM ANDAMENTO</abbr></li>
+
+    <li>4.0 - <abbr title="MODULO 04">AINDA NAO FEITO</abbr></li>
+
+    <li>5.0 - <abbr title="MODULO 05">AINDA NAO FEITO</abbr></li>
+</url>
+
+<P>voçe pode acessar meus <strong>REPOSITORIOS</strong> aqui em baixo</P>
+</aside>
+</article>
+</main>
+<footer>
+    <p>site criado por NYCOLAS WILLIAM para o <a href="https://www.youtube.com/@nycoolaswillian" target="_blank">YOUTUBE</a> ou <a href="https://www.instagram.com/nycoolaswillian/" target="_blank">INSTAGRAM</a></p>
+</footer>
+</body>
+</html>
+</body>
+</html>
