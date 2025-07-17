@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAMOS PRA AULA 03</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <style>
+     @import url('https//fonts.googleapis.com/css2family=bebas+Neue&display=swap');
+
+        @font-face {
+           font-family:"android";
+           src: url(fonte/android.otf) format('opentype')
+       }
+
+        :root{
+            --cor0: rgb(255, 255, 255);
+            --cor1: rgb(190, 206, 235);
+            --cor2: rgb(153, 177, 209);
+            --cor3: rgb(115, 141, 180);
+            --cor4: rgb(60, 122, 163);
+            --cor5: rgb(35, 101, 177);
+            --cor6: rgb(27, 79, 146);
+            --cor7: rgba(0, 42, 97, 0.526);
+            --cor8: rgba(0, 0, 0, 0.526);
+            
+
+            --fonte-padrao: arial, verdana, Helvetica, sans-serif;
+            --fonte-destaque: 'bebas Neue' , cursive;
+            --fonte-android: 'Android', cursive; 
+        }
+
+        h1{
+            color:rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        h2{
+            background-color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        *{
+            margin: 0px;
+            padding: opx;
+        }
+
+        header{
+            min-height: 150px;
+            text-align: center;
+            padding:40px;
+        background-image: linear-gradient(to bottom,var(--cor3), var(--cor6))
+        }
+
+        header > h1{
+            color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 4.5em;
+            text-shadow: 8px 12px black;
+        }
+
+        header > p{
+            color:white;
+            font-size: 2.0em;
+            max-width: 600px;
+            margin: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-shadow: 7px 6px black;
+        }
+
+        nav{
+            background-color: var(--cor6);
+            padding: 10px;
+            box-shadow: 0px 10px 7px black;;
+        }
+
+        main{
+            color: rgb(0, 0, 0);
+            min-width: 300px;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 90px black;
+            border-radius:10px;
+        }
+
+        body{
+            background-color: var(--cor5);
+        }
+
+        main h1{
+            color: var(--cor5);
+            font-family: var(--fonte-android);
+        }
+
+        main h2{
+            font-family: var(--fonte-android);
+            color: var(--cor6);
+            font-size: 1.5em;
+            background-image: linear-gradient(to right, var(--cor1), transparent);
+            text-indent: 8px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        main img.pequena{
+            margin: auto;
+            display: block;
+            max-width: 350px;
+            width: 50%;
+        }
+
+        div.video{
+            background-color: var(--cor5);
+            margin: 0px -20px 30px -20px;
+            padding:20px;
+            padding-bottom: 59%;
+            position: relative;
+        }
+
+        div.video > iframe{
+             position: absolute;
+             top: 5%;
+             left: 5%;
+             width: 90%;
+             height: 90%;
+        }
+
+        footer{
+            background-color: var(--cor5);
+            color: white;
+            text-align: center;
+            font-size: 0.8em;
+            padding: 5px;
+        }
+
+        aside > h3{
+            margin: -10px -10px -10px;
+            border-radius: 10px 10px 0px 0px;
+            background-color: var(--cor4);
+            color: white;
+            padding: 15px;
+            }
+
+            aside{
+            background-color: var(--cor1);
+            padding: 10px;
+            border-radius: 10px;
+            columns: 1;
+            list-style-type: '\2705\00A0\00A0';
+            box-shadow: 3px 3px 10px black;
+        }
+
+        footer a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer a:hover{
+            text-decoration: underline;
+            color: var(--cor1);
+        }
+        
+
+        a:hover{
+        background-color: var(--cor3);
+        color:var(--cor6)
+       }
+
+       a{
+        color: var(--cor0)
+       }
+       a{
+        font-weight: bold;
+       }
+
+       nav > a{
+        padding: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+        transition-duration: 1s;      
+       }
+
+       iframe{
+        margin: auto;
+        display: block;
+       }
+
+       main p{
+        margin: 15px 0px;
+        text-align: justify;
+        text-indent: 30px;
+        font-size: 1.5em;
+        line-height: 1.8em;
+        font-weight: bolder;
+       }
+
+       main strong{
+        color: var(--cor4);
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding: 2px 6px;
+       } 
+    </style>
+    <head>
+<body>
+    <header>
+        <h1><strong>CURSO SENAC!</strong></h1>
+        <P><strong>INATALANDO O MYSQL COM "WAMP"</strong></P>
+    </header>
+
+    <nav>
+        <a href="#"><abbr title="INICIO"><strong>HOME</strong></abbr></a>
+        <a href="#"><abbr title="NOVAS NOTICIAS VC VERA AQUI"><strong>NOTICIAS</strong></abbr></a>
+        <a href="#"><abbr title="AQUI VOÇE IRA VER A NOVAS NOVIDADES OU COMPO PODEMOS DIZR CURIOSIDADES"><strong>CURIOSIDADES</strong></abbr></a>
+        <a href="#"><abbr title="POR ESSE NUMERO 81963634284"><strong>FALE CONOSCO</strong></abbr></a>
+    </nav>
+    <main>
+        <article>
+            <h2>BOM VAMOS COMEÇA A NOSSA 2 AULA DE "INSTALANDO O MYSQL COM WAMP"</h2>
+
+<p>Bom vamos la pessoal <strong>SEJA BEM VINDOS</strong> a nossa aula de um <strong>ASSUNTO DIFERENTE</strong> mais voçe ai deve esta se pergutando como assim nycolas a aula de um assunto diferente isso mesmo pessoal a aula de hoje na verdade <strong>NAO SO HOJE MAIS TAMBEM POR UM TEMPO</strong> ai voçe deve esta se pergutando novamente mais nycolas cade as aula de <strong>"HTML E CSS"</strong> bom pessoal nos iremos começa um assunto totalmente diferente que voçes nunca tinha visto <strong>OU ATE MESMO</strong> ja viram mais deve ter gente que nunca viu ou ja viu e nao esta aprendendo esse assunto mais bom o assunto que vamos aprender por um tempo mais voçe deve esta se pergutando mais porque nycolas por um <strong>TEMPO</strong> bom eu estou aprendendo um assunto novo ah mais voçe deve esta se pergutando que assunto nycolas <strong>BOM O ASUNTO QUE ESTOU APRENDENDO AGORA E "BANCO E DADOS"</strong> e um assunto um pouco meio <strong>CHATO KKK</strong> na verdade eu nao sei nada sobre ele por isso eu vou trabalhar um pouco ele ate porque eu pretendo trabalhar com isso certo? entao se eu trabalhar um pouco desse assunto eu irei fica sabendo um pouco certo mais bom pessoal eu nao irei deixa de estudar o <strong>HTML E CS NAO OK</strong> ate porque eu irei so deixa por um tempo de estduda o <strong>HTML E CSS</strong> pra poder saber desse assunto que e bancos de dados mais bom pessoal e isso e outra coisa tambem eu <strong>NAO</strong> o quero estuda so eses dois assunto ok tem varios assuntos que eu quero estudar so eles <strong>"JAVA SCRIPT, PHP, ETC..."</strong> e entre outros ok mais bom pesoal eu espero que voçe entenda ok pois nos iremos fazer uma jornada desse assunto que falm que e bem chato mais nois iremos aprender e outra voçe deve esta se pergutando nos iremos aprender com quem esse assunto novo? ele msmo "GUSTAVO GUANABARA" nos iremos assistir algumas aulas ou melhor uma jornada de aulas kkk que o nosso professor tem sao 19 videos desse assunto ok mais NAO so iremos so aprender com o nosso professor mais tambem nos iremos ver em outros professores sobre esse assunto que bem chatinho mais bom nos iremos ver passo a passo no caso do "ZERO" ate o "PRO" irei fala assim ok mais bom vamos la começa essa jornada que vai bem legal certo e outra coisa pode fica tranquilo que eu irei fala aqui tambem o que o nosso professor esta explicando ouuuu voçe pode como eu sempre fao "ENTRE NO YOUTUBE E PESQUISE POR GUSTAVO GUANABARA MYSQL" ok que la voçe pode entendr melhor certo mais bom vamos la nos iremos agora começa essa jornada desse assunto certo entao lest goooooo!<p>
+
+<p>bom vamos começa a aula nessa aula nos vai baixa o aplicativo "XAMP" vai ser uma aula extra ok nessa aula nos iremos ver o que deu errado na aula anterior nisso existe outra maneira de resolver isso lembrando isso e so pr quem deu erro ok pra quem nao eu pode proseguir continuando entre no site no seu pc e pesquise por "APACHE" nisso entre no 1 link ok clique nele 3 ja ira aparecer a dela so site nos iremos baia a nova versao do XAMP tem gente que fala zemp na verdade o zemp e a mesma coia que o amp ele e um APACHE,MYSQL,PHP esses tres o apache ee e um sewrviço do servidor E O PHP e o interpetador esse X  e de qualquer plataforma ele ira rodar tanto no windows,max, linux nisso pra baixa a versao mais nova so basta voçe escolher qual voçe quer baixa que esta aparecendo em baixo certo se voçe clica no botao verde onde tem downlod onde voçe ira poder baixa versao especifica que ira mostra na tal do seu pc certo lembrando baixe a verao mais estavel pra baixa a verdao estavel e so volta para a pagina inicial one voçe entrou ok voltando pra pagina inicial e baixe a versao "windows" quene a versao sugerida certo o downlod e u pouco grande mais pode fica tranuilo que +/- 20m ok e assim que o downlod trminan voçe pode acessar a sua pasta de transferancia e executa o arqiuivo que voçe acabou e baixa ok nisso qundo termina o downlod voçe ja pode volta para a paguna inicial do seu PC ok clicando nele e o processor de instalaçao ja vai ira ser iniciado e pra voçe saber sobre o processo veja pelo YOUTUBE "GUSTAVO GUANABARA MYSQL" voltando e importante que voçe faça a instalaçao o seu administrador ate porque voçe nao pdoe instalar em uma maquina que voçe nao tem proivilegio de administrador pra pode voçe instalar e configurar ambientes "uym ero comun e voçe instala o zamp ou o wamp utilizando privilegios de usuarios comum" entao deixand claro voçe tem que ser um usiario de adminisrador se voçe nao for e algue parente da sua familia for pesa pra ele entra e voçe ter esse privilegio ok nisso em um desses passos ee pode pedir acesso pra poder coloca ele ok mais isso ai e tranquilo e so voçe escolher qual pasta que coloca e ja pode fazer a autorizçao ok ate porqua o zamp ele nao e um programa MAILISIOSO ele so esta querendpo que voçe faça a autorizaçao pra ele or funcionar ok ate porque ele esta ranformando sua maquina em um servidor "WEB" esse proceso ele varia de computador para computador e se ele para a qualquer momento veja como resolver que o professor estara explicando ok mais qualquer monento ele pode ped pra voçe instalar algum plugin pra autorizar alguma deteminada pasta ok essa palavra "XAMP" ele tem digamos que um significado se vope ver o zamp ele e um APACHE, MYSQL, PHP ETC... e tem mais um P no final esse P e de "PEARL" se voçe fez o curso de PHP nisso o PHP  se inspirou muito quando o "HASM LOF " criou o PHP ele era um progrmador em PEARL entao muitos comandos por exemplo o "ECO do PHP ele e um comando IMPR ok nisso quando voçe ver qua ja instalou clique em FINISH e coloque a lingua brasileira ok nisso ele a abrira o painel do XAMP se pro acaso  XAMP nao aparece na sua tela clique no botao la em baixo do canto direito e so clica 2 vezes que ee ja ira abrir por padrao o XAMP vem com todos pos serviços desabilçitados vamos abilita eles ok niso so iremos abilita 2 que sao o APACHE EO MYSQL ok agora vanos abrir o WORKBENCH e vamos fazer ee funcionar no noso servidor nisso MINIMIZE e abra  WORKBENCH voçr ira ver que ele tem uma conexao com o AMP que  no caso e uma conxao que ja tiamos feito ok essa conexao ele nao ira servi pra seu AMP nisso nos irmos criar uma conexao nova para o ZAMP nisso e so voçle clica no "+" la em cima cluicandpo nele ele ira pedi o endereço mais ja estara tudo certo ai e so voçe da um nome para a CONEXAO pode coloca qualquer coisa nisso e so da ENTER e dai ja ira abri a conexao clicando nela ele ira da um aviso de PISSIBILIDADE de INCOMPATIBILIDADE niso e so clica em "continue anyway" dai e ele ja abrirar o MYSQL certo e pra testa clique com o botao direto do MOUSE e clique em "CREATE SCHEMA" so pra testa ai voçe pode coloca qualnome onde tem NAME ok e la em baixo clique em "APPLY" pra poder aplicar ok e nisso voçe ver se estiver funconando se estiver esta tudo certo ok niso irei mosra rapidao aqui d como liga e desliga o se serviço ok primeira feche a aba de la e cima e niso voçe ira ir no XAMP que fica la em baico so basta clica que ele ja ira aparecer ok nisso so basta voçe clica em STOP que le ja ira tra o verdinho que significa que o servidor esta dsligado nisso quando abri ira abir normal mais la em baixa ira dizr que "NO CONNECTION" que dizer quer nao esta aberto ok e ptra ativa e a mesma coisa mais so basta voçe ativa que ele ja estara estivo na sua maquina certo bom e isso ate a proxima!</p>
+
+<p>bom como eu ja falei irei colocar um <strong>VIDEO</strong> aqui pra voçe pode <strong>ENTENDER</strong> melhor que o nosso <strong>PROFESSOR</strong> esta <strong>EXPLICANDO E ENSINANDO A FAZER A MANUTENÇAO DO TEU SITE</strong> ok pessoal e isso por hoje e ate jaja ta certo tmj pessoal flw tropaaaa!</p>
+
+<aside>
+ 
+<h3><strong>QUER APRENDER MAIS? E ENTENDER MELHOR O VIDEO VEJA AQUI EM BAIXO!</strong></h3>
+
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/R2HrwSQ6EPM?si=HAorSE7e3R84qpyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p>BOM E ISSO PESSOAL E LAMBRANDO NUNCA DESISTA DOS SEUS SONHOS QUE UM DIA VC IRA REALIZAR!</p>
+
+<url>
+     <li>1.0 - <abbr title="MODULO 01">FEITO</abbr></li>
+
+    <li>2.0 - <abbr title="MODULO 02">FEITO</abbr></li>
+
+    <li>3.0 - <abbr title="MDULO 03">EM ANDAMENTO</abbr></li>
+
+    <li>4.0 - <abbr title="MODULO 04">AINDA NAO FEITO</abbr></li>
+
+    <li>5.0 - <abbr title="MODULO 05">AINDA NAO FEITO</abbr></li>
+</url>
+
+<P>voçe pode acessar meus <strong>REPOSITORIOS</strong> aqui em baixo</P>
+</aside>
+</article>
+</main>
+<footer>
+    <p>site criado por NYCOLAS WILLIAM para o <a href="https://www.youtube.com/@nycoolaswillian" target="_blank">YOUTUBE</a> ou <a href="https://www.instagram.com/nycoolaswillian/" target="_blank">INSTAGRAM</a></p>
+</footer>
+</body>
+</html>
+</body>
+</html>
