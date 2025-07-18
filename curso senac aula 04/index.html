@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAMOS PRA AULA 04</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <style>
+     @import url('https//fonts.googleapis.com/css2family=bebas+Neue&display=swap');
+
+        @font-face {
+           font-family:"android";
+           src: url(fonte/android.otf) format('opentype')
+       }
+
+        :root{
+            --cor0: rgb(255, 255, 255);
+            --cor1: rgb(190, 206, 235);
+            --cor2: rgb(153, 177, 209);
+            --cor3: rgb(115, 141, 180);
+            --cor4: rgb(60, 122, 163);
+            --cor5: rgb(35, 101, 177);
+            --cor6: rgb(27, 79, 146);
+            --cor7: rgba(0, 42, 97, 0.526);
+            --cor8: rgba(0, 0, 0, 0.526);
+            
+
+            --fonte-padrao: arial, verdana, Helvetica, sans-serif;
+            --fonte-destaque: 'bebas Neue' , cursive;
+            --fonte-android: 'Android', cursive; 
+        }
+
+        h1{
+            color:rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        h2{
+            background-color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        *{
+            margin: 0px;
+            padding: opx;
+        }
+
+        header{
+            min-height: 150px;
+            text-align: center;
+            padding:40px;
+        background-image: linear-gradient(to bottom,var(--cor3), var(--cor6))
+        }
+
+        header > h1{
+            color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 4.5em;
+            text-shadow: 8px 12px black;
+        }
+
+        header > p{
+            color:white;
+            font-size: 2.0em;
+            max-width: 600px;
+            margin: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-shadow: 7px 6px black;
+        }
+
+        nav{
+            background-color: var(--cor6);
+            padding: 10px;
+            box-shadow: 0px 10px 7px black;;
+        }
+
+        main{
+            color: rgb(0, 0, 0);
+            min-width: 300px;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 90px black;
+            border-radius:10px;
+        }
+
+        body{
+            background-color: var(--cor5);
+        }
+
+        main h1{
+            color: var(--cor5);
+            font-family: var(--fonte-android);
+        }
+
+        main h2{
+            font-family: var(--fonte-android);
+            color: var(--cor6);
+            font-size: 1.5em;
+            background-image: linear-gradient(to right, var(--cor1), transparent);
+            text-indent: 8px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        main img.pequena{
+            margin: auto;
+            display: block;
+            max-width: 350px;
+            width: 50%;
+        }
+
+        div.video{
+            background-color: var(--cor5);
+            margin: 0px -20px 30px -20px;
+            padding:20px;
+            padding-bottom: 59%;
+            position: relative;
+        }
+
+        div.video > iframe{
+             position: absolute;
+             top: 5%;
+             left: 5%;
+             width: 90%;
+             height: 90%;
+        }
+
+        footer{
+            background-color: var(--cor5);
+            color: white;
+            text-align: center;
+            font-size: 0.8em;
+            padding: 5px;
+        }
+
+        aside > h3{
+            margin: -10px -10px -10px;
+            border-radius: 10px 10px 0px 0px;
+            background-color: var(--cor4);
+            color: white;
+            padding: 15px;
+            }
+
+            aside{
+            background-color: var(--cor1);
+            padding: 10px;
+            border-radius: 10px;
+            columns: 1;
+            list-style-type: '\2705\00A0\00A0';
+            box-shadow: 3px 3px 10px black;
+        }
+
+        footer a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer a:hover{
+            text-decoration: underline;
+            color: var(--cor1);
+        }
+        
+
+        a:hover{
+        background-color: var(--cor3);
+        color:var(--cor6)
+       }
+
+       a{
+        color: var(--cor0)
+       }
+       a{
+        font-weight: bold;
+       }
+
+       nav > a{
+        padding: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+        transition-duration: 1s;      
+       }
+
+       iframe{
+        margin: auto;
+        display: block;
+       }
+
+       main p{
+        margin: 15px 0px;
+        text-align: justify;
+        text-indent: 30px;
+        font-size: 1.5em;
+        line-height: 1.8em;
+        font-weight: bolder;
+       }
+
+       main strong{
+        color: var(--cor4);
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding: 2px 6px;
+       } 
+    </style>    
+    <head>
+<body>
+    <header>
+        <h1><strong>CURSO SENAC!</strong></h1>
+        <P><strong>CRIANDO O 1 BANCO DE DADOS!</strong></P>
+    </header>
+
+    <nav>
+        <a href="#"><abbr title="INICIO"><strong>HOME</strong></abbr></a>
+        <a href="#"><abbr title="NOVAS NOTICIAS VC VERA AQUI"><strong>NOTICIAS</strong></abbr></a>
+        <a href="#"><abbr title="AQUI VOÇE IRA VER A NOVAS NOVIDADES OU COMPO PODEMOS DIZR CURIOSIDADES"><strong>CURIOSIDADES</strong></abbr></a>
+        <a href="#"><abbr title="POR ESSE NUMERO 81963634284"><strong>FALE CONOSCO</strong></abbr></a>
+    </nav>
+    <main>
+        <article>
+            <h2>BOM VAMOS COMEÇA A NOSSA 3 AULA DE "CRIANDO O NOSSO 1 BANCO DE DADOS"</h2>
+
+<p>Bom vamos la pessoal <strong>SEJA BEM VINDOS</strong> a nossa aula de um <strong>ASSUNTO DIFERENTE</strong> mais voçe ai deve esta se pergutando como assim nycolas a aula de um assunto diferente isso mesmo pessoal a aula de hoje na verdade <strong>NAO SO HOJE MAIS TAMBEM POR UM TEMPO</strong> ai voçe deve esta se pergutando novamente mais nycolas cade as aula de <strong>"HTML E CSS"</strong> bom pessoal nos iremos começa um assunto totalmente diferente que voçes nunca tinha visto <strong>OU ATE MESMO</strong> ja viram mais deve ter gente que nunca viu ou ja viu e nao esta aprendendo esse assunto mais bom o assunto que vamos aprender por um tempo mais voçe deve esta se pergutando mais porque nycolas por um <strong>TEMPO</strong> bom eu estou aprendendo um assunto novo ah mais voçe deve esta se pergutando que assunto nycolas <strong>BOM O ASUNTO QUE ESTOU APRENDENDO AGORA E "BANCO E DADOS"</strong> e um assunto um pouco meio <strong>CHATO KKK</strong> na verdade eu nao sei nada sobre ele por isso eu vou trabalhar um pouco ele ate porque eu pretendo trabalhar com isso certo? entao se eu trabalhar um pouco desse assunto eu irei fica sabendo um pouco certo mais bom pessoal eu nao irei deixa de estudar o <strong>HTML E CS NAO OK</strong> ate porque eu irei so deixa por um tempo de estduda o <strong>HTML E CSS</strong> pra poder saber desse assunto que e bancos de dados mais bom pessoal e isso e outra coisa tambem eu <strong>NAO</strong> o quero estuda so eses dois assunto ok tem varios assuntos que eu quero estudar so eles <strong>"JAVA SCRIPT, PHP, ETC..."</strong> e entre outros ok mais bom pesoal eu espero que voçe entenda ok pois nos iremos fazer uma jornada desse assunto que falm que e bem chato mais nois iremos aprender e outra voçe deve esta se pergutando nos iremos aprender com quem esse assunto novo? ele msmo "GUSTAVO GUANABARA" nos iremos assistir algumas aulas ou melhor uma jornada de aulas kkk que o nosso professor tem sao 19 videos desse assunto ok mais NAO so iremos so aprender com o nosso professor mais tambem nos iremos ver em outros professores sobre esse assunto que bem chatinho mais bom nos iremos ver passo a passo no caso do "ZERO" ate o "PRO" irei fala assim ok mais bom vamos la começa essa jornada que vai bem legal certo e outra coisa pode fica tranquilo que eu irei fala aqui tambem o que o nosso professor esta explicando ouuuu voçe pode como eu sempre fao "ENTRE NO YOUTUBE E PESQUISE POR GUSTAVO GUANABARA MYSQL" ok que la voçe pode entendr melhor certo mais bom vamos la nos iremos agora começa essa jornada desse assunto certo entao lest goooooo!<p>
+
+<p>BOM VAMOS LA pra nossa 04 aula de banco de dados e nessa aula nos iremos "CRIAR O NOSSO 1 BAMCO DE DADOS" mais antes de começa a aula se voçe quer ver o videos com mais detalhe e tals entre no youtube e pesquise por "GUSTAVO GANABARA BANCO DE DADOS" e la voçe pode ver com mais detalhe o vdeo e pode fazer a pratica maos com tranquilidade cert agorra vamos para o video de hoje lambrando =se vçe e aos avançado no MYSQL  e nao qur ver os videos que o professor esta exploicando tudo bem mais e bom ver porque qualque coisa pode ter coisa nova no video certo e outra coisa esse curso e para INICIANTES pra quem nao criou nada ainda certo so lembrand tambem o noso professor ira fazer uma "HISTORIA" entao preste atençao ok vo fala qqui rqpifdinho vamos supor que temos 3 pessosas totalmente diferentes mais diferentes como tipo "NOME, IDADE, SEXO, ETC.." nisso voçe ver que ne sao nomes e idades e sexo diferentes mais e dai que o MYSQL tras ele tras no caso isso e o objetivo do banco de dados "REGISTRA INSTANCIAS SEPARADAS DE COISADS QUE TEM CARACTERISTICAS SEMELHANTES" entao basicamente uando esse tipo de qustao "eu posso cadrasta qualquer tipo de pessoa porque todas elas vao ter a mesma caracteristica" e note quresao CARACTERISTICAS E NAO VALORES as caracyeristicas sao as memas por exemplo TODOS ESSES EM NOME nisso se eu pega essas pessoas e coloca dentro de um CONTEINR e escreve do ldpo bem grande PESSOAS e todas as instancis que tiver nesse conteiner ira ter esas caracteristicas "NOME , IDADE, SEXO, PESO, ALTURA, NACIONALIDADE" ENTA RESUMINDO EU POSO CRIAR CONTEINER para coisas DIFERENTES  outro exempolo e coloca caracteristica de JOGOS nisso pessoas e jogos sao diferentes NISSO POSSUEN CRACTERISTICA DIFERENTES e nisso eu vou coloca jogos que cara um tem sua caracteristicas como "O NOME DO JOGO, O FABRINATE DO JOGO, O GENERO E ETC.." entao no mundo do banco de dados eu vou AGRUPA COISAS QUE TEM CRACTERISTICA SEMENLHANTES e separa de coisas que tem CARACTERISTICA DIFERENTES e nisso por exemplo esses CONTEINER EU VOU COLOCA DENTRO DE UM NAVIO certo e claro ne o navio ira se chama BANCOS E DADOS nisso o banco de dados ao colecoes de dados que sao caracteristicas separadas mais que estao organizados em locais especificos nisso esses locais especificos sao as MINHAS TABELAS nisso as tabelas guardam dadpos de coias que tem caracteristica semelhantes e se eu quiser eru posso tr varias tabelas dentro de um BANCO E DADOS nisso os dados que estao dentro de tabelads tambem tem um nome chama-se REGISTRO entao pra começa a criar o meu bancos de dados e pra criar o meu banco de de dado em uma MYSQL e SIMPLES nisso e so voçe coloca um comando "CREATE DATABASE CADRASTO;" nisso esse comando nos iremos coloca no ambiante que vimso nas auls entao vamos la niso a 1 coisa que vamos abrio o WAMPSERVE e so clica nele pra fica verde nisso ficando verde voçe ja pode abri o seu ambiente pra acessa o banco de dados abra o app que seria MYSQL abrindo ele niso la no canto direto la em cima ira ter 3 quadrados clique nele nos 2 que falta pra a sua tela fica digamso que mais CHEIA certo ou ate mesmo voçe pode esconder as 3 barrs tanto faz nisso pra voçe ver se ja esta tudo funcionando clica la em baixo one tem "SCHEMAS" e aparti dai vamos coloca a mao na massa nisso na parte banca voçe ira coloc o nome que vimos no caso o "comando" colocando o "comando" niso pra EXECUTA O COMNDO QUE ESTA ATIVO SO BASTA VOÇE CLICA NO RAIOZINHO QUE ESTA LA EM CIMA NO CANTO ESQUERDO que tem um "TRACINHO E PE" nisso clicando nele o comando ja foi executa com sucesso pra voçe ver se ja esta funconando basta voçe abri a parte de baixo la nos 3 quadrados la em cium no canto direito que ja ira aparecer "CREATE DATABASE CADRASTO" e um verdinho sinalizando qu deu certo nisso no canto ESQUERDO vamos atualizar pra ve se deu certo ou nao e ja ira aparcer o nome "CADRASTO" nisso ja deu certo o seu banco niso dentro desse banco de dados nos temos "TABELAS" por enquanto nos iremos trabalha somente com tabelas ok voçe tambe tem outras coias como "VISOES, PROCEDIMENTO, ARMAZENAMENTOS ETC" mais vamos começa passo a passo ate agora nos spo criamos o banco de dados CADRASTO  e agora nos iremos parti pra criar as TABELAS dando uma relembrada npos vimos que IDADE, NOME, E SEXO das pessoas ao totalmente diferentes e essas carateristicas sao chamadas de CAMPOS entao resumindo "BANDO DE DADOS CONTEM TABELAS NISSO TABELAS CONTEM REGISTROS E REGISTROS CONTEM CAMPOS" certo nisso vamos criar essa estrutura pra criar essa estruturas temos da ukm comando que no caso "CREATE TABLE PESSOAS ( );" niso voçe ira apaga o que tava pra poder coloca o novo comando ok que e no caso o de TABELAS nisso dentro do ,comando do CREATE TABLE nos iremos coloca as caracteristicas que sao "NOME, IDADE, SEXO, IDADE, PESO, ALTIURA, NACIONALIDADE ETC" nisso nos vamos dizer os tipos de cada um desses campos "assim como nos algoritimos voçe tem que coloca as variares do tipo primitivo" nisso uma MYSQL tem os seus PRIMITIVOS SAO ELES "numerico, data/tempo, literal, espacial" so que ele tem "subdivisoes e subtipos" o doi numerico sao: INTEIRO, REAL, LOGICO e nisso dai vem uma das grands diferenças de uma MYSQL que e "PRESSAO" ate porque como os dados como va ser armazenados em DISCO voçe precisa dimensionar muito bem a estrutura dessa tabela lembrando que tem "EXPERIENCDIA EM BANCOS DE DADOS NAO SE CADRASTA IDADE DE BANCOS DE DADOS ATE PORQUE IDADE MUDA CONSTANTIMENTE" mis estamos no PASSO A PASSO outra familia que subdividem em "CARACTERE, TEXTO, BILNARIOS, E COLEÇOES" niso agora vamos ver os "TIPO INTEIRO" no banco de dados niso no banco de dados em ua MYSQL ele se subdivide em varios outros tipos com precisao diferentes como por exemplo "TYNYINT, SMALLINT, INT, MEDIUMINT, BIGINT" a difrença deses tipos sao as quantidades de BYTES que ele vai ultilizar para armazenar esta dado o TINYINT por exemplo ele ua muito menos ddos do que por exemplo o BIGINT nio o BIGINT ele va ultilizar muitos bytes em disco e o TINYINT vai usar pouco niso isso ira diferencia no tamanho do numero que voçe vai guarda por exemplo idade voçe na vai ultilizar o int por exemplo voçe usa o TINYINT </p>
+
+<p>bom como eu ja falei irei colocar um <strong>VIDEO</strong> aqui pra voçe pode <strong>ENTENDER</strong> melhor que o nosso <strong>PROFESSOR</strong> esta <strong>EXPLICANDO E ENSINANDO A FAZER A MANUTENÇAO DO TEU SITE</strong> ok pessoal e isso por hoje e ate jaja ta certo tmj pessoal flw tropaaaa!</p>
+
+<aside>
+ 
+<h3><strong>QUER APRENDER MAIS? E ENTENDER MELHOR O VIDEO VEJA AQUI EM BAIXO!</strong></h3>
+
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/m9YPlX0fcJk?si=XMM9ef2ivuNKuiUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p>BOM E ISSO PESSOAL E LAMBRANDO NUNCA DESISTA DOS SEUS SONHOS QUE UM DIA VC IRA REALIZAR!</p>
+
+<url>
+     <li>1.0 - <abbr title="MODULO 01">FEITO</abbr></li>
+
+    <li>2.0 - <abbr title="MODULO 02">FEITO</abbr></li>
+
+    <li>3.0 - <abbr title="MDULO 03">EM ANDAMENTO</abbr></li>
+
+    <li>4.0 - <abbr title="MODULO 04">AINDA NAO FEITO</abbr></li>
+
+    <li>5.0 - <abbr title="MODULO 05">AINDA NAO FEITO</abbr></li>
+</url>
+
+<P>voçe pode acessar meus <strong>REPOSITORIOS</strong> aqui em baixo</P>
+</aside>
+</article>
+</main>
+<footer>
+    <p>site criado por NYCOLAS WILLIAM para o <a href="https://www.youtube.com/@nycoolaswillian" target="_blank">YOUTUBE</a> ou <a href="https://www.instagram.com/nycoolaswillian/" target="_blank">INSTAGRAM</a></p>
+</footer>
+</body>
+</html>
+</body>
+</html>
