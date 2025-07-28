@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAMOS PRA AULA</title>
+</head>
+<body>
+    <style>
+     @import url('https//fonts.googleapis.com/css2family=bebas+Neue&display=swap');
+
+        @font-face {
+           font-family:"android";
+           src: url(fonte/android.otf) format('opentype')
+       }
+
+        :root{
+            --cor0: rgb(255, 255, 255);
+            --cor1: rgb(190, 206, 235);
+            --cor2: rgb(153, 177, 209);
+            --cor3: rgb(115, 141, 180);
+            --cor4: rgb(60, 122, 163);
+            --cor5: rgb(35, 101, 177);
+            --cor6: rgb(27, 79, 146);
+            --cor7: rgba(0, 42, 97, 0.526);
+            --cor8: rgba(0, 0, 0, 0.526);
+            
+
+            --fonte-padrao: arial, verdana, Helvetica, sans-serif;
+            --fonte-destaque: 'bebas Neue' , cursive;
+            --fonte-android: 'Android', cursive; 
+        }
+
+        h1{
+            color:rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        h2{
+            background-color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+        }
+
+        *{
+            margin: 0px;
+            padding: opx;
+        }
+
+        header{
+            min-height: 150px;
+            text-align: center;
+            padding:40px;
+        background-image: linear-gradient(to bottom,var(--cor3), var(--cor6))
+        }
+
+        header > h1{
+            color: rgb(255, 255, 255);
+            font-family: var(--fonte-android);
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 4.5em;
+            text-shadow: 8px 12px black;
+        }
+
+        header > p{
+            color:white;
+            font-size: 2.0em;
+            max-width: 600px;
+            margin: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-shadow: 7px 6px black;
+        }
+
+        nav{
+            background-color: var(--cor6);
+            padding: 10px;
+            box-shadow: 0px 10px 7px black;;
+        }
+
+        main{
+            color: rgb(0, 0, 0);
+            min-width: 300px;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 90px black;
+            border-radius:10px;
+        }
+
+        body{
+            background-color: var(--cor5);
+        }
+
+        main h1{
+            color: var(--cor5);
+            font-family: var(--fonte-android);
+        }
+
+        main h2{
+            font-family: var(--fonte-android);
+            color: var(--cor6);
+            font-size: 1.5em;
+            background-image: linear-gradient(to right, var(--cor1), transparent);
+            text-indent: 8px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        main img.pequena{
+            margin: auto;
+            display: block;
+            max-width: 350px;
+            width: 50%;
+        }
+
+        div.video{
+            background-color: var(--cor5);
+            margin: 0px -20px 30px -20px;
+            padding:20px;
+            padding-bottom: 59%;
+            position: relative;
+        }
+
+        div.video > iframe{
+             position: absolute;
+             top: 5%;
+             left: 5%;
+             width: 90%;
+             height: 90%;
+        }
+
+        footer{
+            background-color: var(--cor5);
+            color: white;
+            text-align: center;
+            font-size: 0.8em;
+            padding: 5px;
+        }
+
+        aside > h3{
+            margin: -10px -10px -10px;
+            border-radius: 10px 10px 0px 0px;
+            background-color: var(--cor4);
+            color: white;
+            padding: 15px;
+            }
+
+            aside{
+            background-color: var(--cor1);
+            padding: 10px;
+            border-radius: 10px;
+            columns: 1;
+            list-style-type: '\2705\00A0\00A0';
+            box-shadow: 3px 3px 10px black;
+        }
+
+        footer a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer a:hover{
+            text-decoration: underline;
+            color: var(--cor1);
+        }
+        
+
+        a:hover{
+        background-color: var(--cor3);
+        color:var(--cor6)
+       }
+
+       a{
+        color: var(--cor0)
+       }
+       a{
+        font-weight: bold;
+       }
+
+       nav > a{
+        padding: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+        transition-duration: 1s;      
+       }
+
+       iframe{
+        margin: auto;
+        display: block;
+       }
+
+       main p{
+        margin: 15px 0px;
+        text-align: justify;
+        text-indent: 30px;
+        font-size: 1.5em;
+        line-height: 1.8em;
+        font-weight: bolder;
+       }
+
+       main strong{
+        color: var(--cor4);
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding: 2px 6px;
+       } 
+    </style>    
+    <head>
+<body>
+    <header>
+        <h1><strong>CURSO SENAC!</strong></h1>
+        <P><strong>MANIPULAÇAO DAS LINHAS!</strong></P>
+    </header>
+
+    <nav>
+        <a href="#"><abbr title="INICIO"><strong>HOME</strong></abbr></a>
+        <a href="#"><abbr title="NOVAS NOTICIAS VC VERA AQUI"><strong>NOTICIAS</strong></abbr></a>
+        <a href="#"><abbr title="AQUI VOÇE IRA VER A NOVAS NOVIDADES OU COMPO PODEMOS DIZR CURIOSIDADES"><strong>CURIOSIDADES</strong></abbr></a>
+        <a href="#"><abbr title="POR ESSE NUMERO 81963634284"><strong>FALE CONOSCO</strong></abbr></a>
+    </nav>
+    <main>
+        <article>
+            <h2>BOM VAMOS COMEÇA A NOSSA AULA DE "MANIPULAÇAO DAS LINHAS"</h2>
+
+<p>Bom vamos la pessoal <strong>SEJA BEM VINDOS</strong> a nossa aula de um <strong>ASSUNTO DIFERENTE</strong> mais voçe ai deve esta se pergutando como assim nycolas a aula de um assunto diferente isso mesmo pessoal a aula de hoje na verdade <strong>NAO SO HOJE MAIS TAMBEM POR UM TEMPO</strong> ai voçe deve esta se pergutando novamente mais nycolas cade as aula de <strong>"HTML E CSS"</strong> bom pessoal nos iremos começa um assunto totalmente diferente que voçes nunca tinha visto <strong>OU ATE MESMO</strong> ja viram mais deve ter gente que nunca viu ou ja viu e nao esta aprendendo esse assunto mais bom o assunto que vamos aprender por um tempo mais voçe deve esta se pergutando mais porque nycolas por um <strong>TEMPO</strong> bom eu estou aprendendo um assunto novo ah mais voçe deve esta se pergutando que assunto nycolas <strong>BOM O ASUNTO QUE ESTOU APRENDENDO AGORA E "BANCO E DADOS"</strong> e um assunto um pouco meio <strong>CHATO KKK</strong> na verdade eu nao sei nada sobre ele por isso eu vou trabalhar um pouco ele ate porque eu pretendo trabalhar com isso certo? entao se eu trabalhar um pouco desse assunto eu irei fica sabendo um pouco certo mais bom pessoal eu nao irei deixa de estudar o <strong>HTML E CS NAO OK</strong> ate porque eu irei so deixa por um tempo de estduda o <strong>HTML E CSS</strong> pra poder saber desse assunto que e bancos de dados mais bom pessoal e isso e outra coisa tambem eu <strong>NAO</strong> o quero estuda so eses dois assunto ok tem varios assuntos que eu quero estudar so eles <strong>"JAVA SCRIPT, PHP, ETC..."</strong> e entre outros ok mais bom pesoal eu espero que voçe entenda ok pois nos iremos fazer uma jornada desse assunto que falm que e bem chato mais nois iremos aprender e outra voçe deve esta se pergutando nos iremos aprender com quem esse assunto novo? ele msmo "GUSTAVO GUANABARA" nos iremos assistir algumas aulas ou melhor uma jornada de aulas kkk que o nosso professor tem sao 19 videos desse assunto ok mais NAO so iremos so aprender com o nosso professor mais tambem nos iremos ver em outros professores sobre esse assunto que bem chatinho mais bom nos iremos ver passo a passo no caso do "ZERO" ate o "PRO" irei fala assim ok mais bom vamos la começa essa jornada que vai bem legal certo e outra coisa pode fica tranquilo que eu irei fala aqui tambem o que o nosso professor esta explicando ouuuu voçe pode como eu sempre fao "ENTRE NO YOUTUBE E PESQUISE POR GUSTAVO GUANABARA MYSQL" ok que la voçe pode entendr melhor certo mais bom vamos la nos iremos agora começa essa jornada desse assunto certo entao lest goooooo!<p>
+
+<p>BOM VAMOS COMEÇA MAIS UMA AULA E HOJE E NESSA NOSVAMOS APRENDER "MANIPULAÇAO DAS LINHAS OU MELHOR REGISTROS" ENTAO VAMOS LA LEST GOOO em livros voçe pode encontra esse nome diferente como MANIPULANDO LINHAS, REGISTROS OU TUPLAS ok todos esses sao sinomimos assim registro e mais comun de aparecer mais se por acaso foic itado linha o conceito de linha e a mesma coisa que o registro" e uma linha da tabela ok mais vamos ver isso vamos ver tambem porque nos chamamos de LINHA e tambem porque os campos nos chamammos de COLUNAS certo mais um nome que e bem curioso e o nome TUPLA quem tambem se refere a uma LINHA de um BANCO DE DADOS entao se por acaso em algum luigar aparecer o termo LINHA, REGISTRO OU TUPLA voçe sabe qu esta se falando da mesma coisa e um dos videos anteriores nos vimpos como INCLUIR LINHAS na aula anterior quer seria o comando "INSERT TO" ok entao vamos começa a PRATICAR ok nisso ja abra o seu BANCO DE DADOS pra abir e fcilo CLIQUE 2 VEZES NELE que ele ja estara aberto okm nisso nos ja temos as tabelas que criamos na AULA PASSADA ok que no caso a de "gafanhoto nos temos o id,colunas, profissao, nascimento, sexo etc..." ja na tabela curso nos temos "id do curso, nome, descriçao, carga horaria do curso etc..." certo isso nos vimos na ula anterior ok se nos temos "select *from gafanhotos;" ira aparecer a tabela ja pronta que nos fizemos na aula anterior certo mais olhe direto ai nessa tabela ja pronta pra voçe entender o que seria LINHAS ou que seria COLUNA certo essa lista ou melhor "result set" isso seria o nome que seria o RESULTADO DE UMA INTRUÇAO se voçe presta atençao as minhas LINHAS SERIA O MEU REGISTRO se voçe clica em uma delas ira fica azul isso que esta em volta dela sao as LINHAS opu melhor tudo oq eu tiver em linha sao REGISTROS e tudo que estiver em coluna e CAMPO QUE SERIA o "profisao, nasimento, peso, etc.." ok ewntai guarda ai "AS LINHAS SAO AS TUPLAS OI REGISTROS ja as colunas SAO OS CAMPOS OU MENOS ATRIBUTOS o que vamos fazer aqui e MANIPULA LINHAS e se vcoçe quiser manipula coluna e esse coluna vai pra auça de ALTER TABLE que vooçe ira ver que esse comando permite que voçe altere COLUNAS E JA O COMANDO QUE VOÇE VAMOS APRENDER VAI PRMITIR que voçe manipule linhas ok bom vamos la para o MYSQL ao entre no sql pegue o id curso e vamoos praticar deppois que pegou o curso voçe ira ver que nele nao ira ter nemnhuma linhas certo voçe ate ver que tem um "*" que indica que NAO tem registro nenhum entao aqui antes de começla nos vamos INCLUIR NOVOS REGISTROS OU INCLUOIR NOVOS CURSOS ok bom e nos ja digitamos um comando que no caso e gigante esse comando seria o comando INDERT TO gigante enta difite esse comando ai tambem ok que e no caso esse comando aqui " ('1', 'HTML4', 'curso de HTML5', '40', '37', '2014'),
+('2', 'algoritimo', 'logica de programaçao', '20', '15', '2014'),
+('3', 'photoshop', 'dicas de photoshop CC', '10', '8', '2014'),
+('4', 'PGP', 'curso de php para iniciantes', '40', '20', '2010'),
+('5', 'jrava', 'introduçao de linguagem java', '10', '29', '2000'),
+('6', 'Mysql', 'banco de dados mysql', '30', '15', '2016'),
+('7', 'word', 'curso completo de word', '40', '30', '2018'),
+('8', 'sapateado', 'danças ritmicas', '40', '30', '2018'),
+('9', 'cozinha arabe', 'aprendar a fazer kibe', '40', '30', '2018'),
+('10', 'youtuber', 'gerar polemicae ganha inscritos', '5', '2', '2018');" ok esse mesmo gigante kkk e e voçe nao assitiu a aula de INSERT TO volte e va assistirt assim voçe vai aprender ok entao essw comando ai vaoi adicionar varios registrosse voiçe ptresta ATENÇAO em algumas erros de digitaçao aque oh por exemplo o "JARVA" esses erros eu coloquei de proposito ok ate porque como voçe sabe nos vamos manipular linhas ok entao anote esse comando ai no sey MYSQL ate porque nos vamos precisar das linhas pra poder manipular ok nisso voçe ira clica ne pra podr adicionar esse comando ai e "CTRL + ENTER" OK niso os dados ue acabmos de coloja ja estarao incluindos na sua tabela ok nisso nosso banco de dados ja temos o cadrasto de duas coisas GAFANHOTOS E CURSOS ok no gafanhotos nos temos essa estrutura sao elas "ID, NOME, SEXO, NACIONALIDADE, PESO, ALTURA ETC..." ok e e voçe percebe que o nosso id esta SUMBLINHADO iuso porque ele e a "CHAVE PRIMERIA" ok  e ja no nosso curso que nos fizemos nos temos essa estrutura "IDCURSO, NOME, ESCRIÇAO, CARGA, TOTAULAS, ANO" ok niso depois qu nos fizermos a inclusao a nossa tebela de curso ta dessa maneira que e no caso as linhas que acabamos de incluir que foi onde acabamos de fazer ok perceba ai que foram 10 registros que foram incluidos e inclusive com os erros de digitaçao que nos mesmo colocamos ok e faça a mesma coisa ok pra poder funcionar certo se voçpe perceber tem algumas curso de 2028 que estao meio de trolagem ok nao e o certo mais calma que isso ira ser necessacios tambem pra podemos ajita isso depois ok entao a primeira coisa coisa que nos temos que fazer e manipular essas linhas ate porque nos nao conseguimos manipular varias linhas ao mesmo tempo "1 COMANDO MANIPULA 1 LINHA OK " mas nos conseguimos mexer dentro de uma linha em varias colunas ao mesmo tempo vamos aprender a como fazer isso a 1 coisa que nos vamos fazer e mdifica a linha 1 do HTML4 que no caso temos que mudar para HTML5 ok e pra modifica isso e muito simples e se voçe percebea linha 1 do "IRCURSO" esta marcada ok irei de explicar ok entao vams para o comando entao pra poder modificar 1 linha nos vamos digita o comando "UPDATE" entao certo entao vamos colocar UPDATE CURSO o curao sendo o nome da tabela que vamos modificar ok e vamos colocar SET nome = 'HTML5' isso e vamos modificar a tabela o curso para o nome HTML5 ok maois qual linha eu vou ver pra poder modificar iso e facil e so voçe se basear em um campos nisso no meu caso eu voi indenficar no campo de chave primaria porque ai eu tenho certeza que so existe uma linha lambra que chave PRIMERIA indenftifica cada registro nao existe duas linhas com a mesmam chave primaria com isso complementando o comando voçle ira colocar WHERE ID CURSO = '1'; ok desse mesmo jeito veja so o "UPDATE E ATUYALIZE, O WHERE SERIA ONDE e o SET CONFIGURE ok nisso vamos modificar na pratica ok niso precione CONTROL + ENTER e voçe,ira ver que foi mudado ok pra o que voçe acabou de colocar certo e pra poder abor a tabela e poder ver e so digita o comando "select * from curso;" certo nisso nos acabamos de manipular uma linhas ok mais calma acabu or ai nao se voçe ver na linha 4 onde esta o curso de PGP e o ano esta com 2010 nos temos que alterar os dois ao msmo tempo entao vamos ver isso ai nisso vamos coloca o comando que e "update curso mais niso o SET sera diferente isso e considerendo na linha 4 ok niso ficaria set nome = 'PHP', ano = '2015' e isso viu como e eu simplismente coloco na mesma linha todas as alteraçoes sepoeradas por virgula nisso agpra nos vamos inicar o WHERE que e a qual linha eu irei indicar pra podr modificar que ficaria "WHERE idcurso = '4'; ok entao coloque esse comando la no MYSQL ok nisso de CONTROL + ENTER PRA PODER VER A TABELA ok nisso ja estara MODIFICADO mais vamos modifica mais 1 linha ok vamos la o mesmo PROCESSO digamos que parecido mais vou coloca mais 1 parametro pra poder limitar a açao do comando ok o fato e o seguinte com o UPDATE se voçe mexe a CHAME PRIMARIA voçe som mexe numa linha ok mais existe a possibilidade ou melhor o RISCO </p>
+
+<p>bom como eu ja falei irei colocar um <strong>VIDEO</strong> aqui pra voçe pode <strong>ENTENDER</strong> melhor que o nosso <strong>PROFESSOR</strong> esta <strong>EXPLICANDO E ENSINANDO A FAZER A MANIPULAÇAO DAS LINHAS</strong> ok pessoal e isso por hoje e ate jaja ta certo tmj pessoal flw tropaaaa!</p>
+
+<aside>
+ 
+<h3><strong>QUER APRENDER MAIS? E ENTENDER MELHOR O VIDEO VEJA AQUI EM BAIXO!</strong></h3>
+
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/wXViczeTr6Q?si=nPzwNRu_WQIphGwe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p>BOM E ISSO PESSOAL E LAMBRANDO NUNCA DESISTA DOS SEUS SONHOS QUE UM DIA VC IRA REALIZAR!</p>
+
+<url>
+     <li>1.0 - <abbr title="MODULO 01">FEITO</abbr></li>
+
+    <li>2.0 - <abbr title="MODULO 02">FEITO</abbr></li>
+
+    <li>3.0 - <abbr title="MDULO 03">EM ANDAMENTO</abbr></li>
+
+    <li>4.0 - <abbr title="MODULO 04">AINDA NAO FEITO</abbr></li>
+
+    <li>5.0 - <abbr title="MODULO 05">AINDA NAO FEITO</abbr></li>
+</url>
+
+<P>voçe pode acessar meus <strong>REPOSITORIOS</strong> aqui em baixo</P>
+</aside>
+</article>
+</main>
+<footer>
+    <p>site criado por NYCOLAS WILLIAM para o <a href="https://www.youtube.com/@nycoolaswillian" target="_blank">YOUTUBE</a> ou <a href="https://www.instagram.com/nycoolaswillian/" target="_blank">INSTAGRAM</a></p>
+</footer>
+</body>
+</html>
+</body>
+</html>
